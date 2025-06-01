@@ -1,0 +1,19 @@
+.textContainer {
+  margin-bottom: 32px;
+  padding: 0 64px;
+}
+
+.modal:global(.ui.modal > .content) {
+  margin-top: 4px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 767px) {
+  .textContainer {
+    padding: 0;
+  }
+
+  .modal:global(.ui.modal > .content) {
+    font-size: 15px;
+  }
+}

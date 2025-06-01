@@ -1,0 +1,1664 @@
+{
+  "global": {
+    "close": "Cerrar",
+    "day": "día",
+    "assets": "Listado",
+    "address": "Direccion",
+    "balance": "Balance",
+    "load_more": "Cargar Más",
+    "more": "Más",
+    "less": "Menos",
+    "not_found": "No se ha encontrado",
+    "unauthorized": "No autorizado",
+    "parcel": "Parcela",
+    "parcel_count": "{count} {count, plural, one {Parcela} other {Parcelas}}",
+    "parcel_with_coords": "Parcela {x},{y}",
+    "estate": "Estate",
+    "wearable": "Vestimenta",
+    "ens": "Nombre",
+    "art": "Arte",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "proceed": "Aceptar",
+    "create": "Crear",
+    "continue": "Continuar",
+    "go_back": "Volver",
+    "nft": "NFT",
+    "loading": "Cargando",
+    "settings": "Configuración",
+    "accept": "Aceptar",
+    "update": "Actualizar",
+    "search": "Buscar",
+    "apply": "Aplicar",
+    "network": "Red",
+    "issue_number": "Número de emisión",
+    "primary": "Primaria",
+    "secondary": "Secundaria",
+    "item": "Item",
+    "type": "Tipo",
+    "sale_type": "Tipo de venta",
+    "sell_price": "Precio de venta",
+    "rent_price": "Precio de renta",
+    "no_results": "Sin resultados",
+    "learn_more": "Aprende Más",
+    "category": "Categoria",
+    "rarity": "Rareza",
+    "stock": "Stock",
+    "price": "Precio",
+    "collection": "Colección",
+    "time": "Tiempo",
+    "buyer": "Comprador",
+    "bid": "Oferta",
+    "order": "Clasificado",
+    "mint": "Venta",
+    "back": "Volver",
+    "emote": "Emote",
+    "time_ago": "Hace {time}",
+    "confirm": "Confirmar",
+    "days": "días",
+    "error": "Error",
+    "period": "Periodo",
+    "status": "Estado",
+    "unknown_error": "Error desconocido",
+    "the_parcel": "La Parcela",
+    "the_estate": "El Estate",
+    "discord_server": "Servidor de Discord",
+    "currently": "actualmente",
+    "showing": "Mostrando",
+    "of": "de",
+    "now": "ahora",
+    "actions": "Acciones",
+    "action_required": "Acción requerida",
+    "finish": "Terminar",
+    "guest": "Invitado",
+    "block_vrm": "Exportar",
+    "block_vrm_tooltip": "Este artículo no permite la exportación de VRM",
+    "utility": "Utilidad"
+  },
+  "search_dropdown": {
+    "recent": "Reciente",
+    "creators": "Creadores",
+    "collections": "Colecciones",
+    "see_all_wearables": "Ver todos los resultados de vestimenta",
+    "see_all_emotes": "Ver todos los resultados de emotes",
+    "no_results": "Intenta con otra palabra"
+  },
+  "address": {
+    "invalid_address": "Dirección inválida",
+    "ens_not_resolved": "Nombre ENS inválido"
+  },
+  "error_boundary": {
+    "message": "Oops! Algo salió mal..."
+  },
+  "estate_detail": {
+    "dissolved": "Este Estate ha sido disuelto"
+  },
+  "vendors": {
+    "decentraland": "Decentraland",
+    "super_rare": "SuperRare",
+    "makers_place": "MakersPlace",
+    "known_origin": "KnownOrigin"
+  },
+  "navigation": {
+    "overview": "Resumen",
+    "mvmf": "Metaverse Music Festival",
+    "land": "Land",
+    "names": "NAMEs",
+    "collectibles": "Coleccionables",
+    "partners": "Socios",
+    "my_assets": "Mis Objetos",
+    "my_lists": "Mis Listas",
+    "my_bids": "Mis Ofertas",
+    "activity": "Actividad",
+    "buy_mana_with_fiat": "Comprar MANA"
+  },
+  "user_menu": {
+    "my_assets": "Mis Objetos",
+    "my_lists": "Mis Listas"
+  },
+  "menu": {
+    "all": "Todos",
+    "land": "Tierra",
+    "parcels": "Parcelas",
+    "estates": "Estates",
+    "wearables": "Vestimenta",
+    "wearables_head": "Cabeza",
+    "wearables_eyebrows": "Cejas",
+    "wearables_eyes": "Ojos",
+    "wearables_facial_hair": "Barba",
+    "wearables_hair": "Cabello",
+    "wearables_mouth": "Boca",
+    "wearables_upper_body": "Torso",
+    "wearables_lower_body": "Piernas",
+    "wearables_feet": "Pies",
+    "wearables_accessories": "Accesorios",
+    "wearables_earring": "Aros",
+    "wearables_eyewear": "Gafas",
+    "wearables_hat": "Sombreros",
+    "wearables_helmet": "Cascos",
+    "wearables_mask": "Mascaras",
+    "wearables_tiara": "Tiara",
+    "wearables_top_head": "Tope de la cabeza",
+    "wearables_skin": "Skin",
+    "wearables_hands": "Manos",
+    "emotes": "Emotes",
+    "emotes_dance": "Baile",
+    "emotes_poses": "Poses",
+    "emotes_fun": "Divertido",
+    "emotes_greetings": "Saludos",
+    "emotes_stunt": "Truco",
+    "emotes_reactions": "Reacciones",
+    "emotes_horror": "Horror",
+    "emotes_miscellaneous": "Misceláneos",
+    "ens": "Nombres",
+    "decentraland": "Decentraland",
+    "super_rare": "SuperRare",
+    "known_origin": "KnownOrigin",
+    "makers_place": "MakersPlace",
+    "collections": "Colecciones",
+    "on_sale": "En venta",
+    "on_rent": "En alquiler",
+    "sales": "Ventas",
+    "bids": "Ofertas",
+    "store_settings": "Configuración"
+  },
+  "on_rent_menu": {
+    "title": "Assets en renta"
+  },
+  "vendor_menu": {
+    "no_assets": "Sin assets",
+    "assets_count": "{count} {count, plural, one {asset} other {assets}}",
+    "more_than_assets_count": "+{count} assets"
+  },
+  "filters": {
+    "type": "Tipo",
+    "status": "Estado",
+    "sort_by": "Ordenado por",
+    "item": "Creaciones originales",
+    "nft": "Artículos de reventa",
+    "name": "Nombre",
+    "name_asc": "Nombre ⬆",
+    "name_desc": "Nombre ⬇",
+    "recently_updated": "Recientemente actualizada",
+    "newest": "Más nuevos",
+    "oldest": "Más viejos",
+    "recently_listed": "Listados recientemente",
+    "recently_listed_for_rent": "Listados recientemente para rentar",
+    "recently_sold": "Vendidos recientemente",
+    "cheapest": "Más baratos",
+    "most_expensive": "Más caros",
+    "no_results": "No se encontraron resultados.",
+    "type_to_search": "Escriba para buscar collecciones.",
+    "clear": "Borrar filtros",
+    "recently_reviewed": "Revisado recientemente",
+    "size": "Tamaño",
+    "price": "Precio",
+    "price_min_greater_max": "El precio máximo debería ser mayor al mínimo",
+    "get_with_credits": "Comprar con créditos",
+    "special_filters": "Filtros especiales",
+    "estate_size": {
+      "label": "Tamaño de Estate",
+      "min_label": "Min (Parcelas)",
+      "max_label": "Máx (Parcelas)",
+      "error": "El tamaño máximo de parcelas debería ser superior al mínimo"
+    },
+    "reset": "Limpiar",
+    "apply_filters": "Aplicar filtros"
+  },
+  "home_page": {
+    "analytics": {
+      "volume": {
+        "title": "Volumen del Marketplace",
+        "subtitle": "Incluye tierras, wearables, emotes and nombres",
+        "total_sales": "Ventas totales",
+        "total_sales_tooltip": "Número de NFT vendidos, incluidos los mercados primario y secundario.",
+        "total_volume": "Volumen total",
+        "total_volume_tooltip": "Volumen de ventas y rentas en MANA, incluyendo mercados primarios y secundarios.",
+        "creators_earnings": "Ganancias de creadores",
+        "creators_earnings_tooltip": "Los creadores obtienen el 97,5 % de las ventas primarias y el 2,5 % de las ventas secundarias como regalías.",
+        "dao_revenue": "Ganancias de la DAO",
+        "dao_revenue_tooltip": "La DAO recibe el 2.5% de las ventas de LAND, alquileres y minteo de Coleccionables; y el 100% de las tarifas de publicación y creaciones de nombres.",
+        "seven_days": "7 días",
+        "thirty_days": "30 días",
+        "all": "Todo"
+      },
+      "rankings": {
+        "title": "Clasificaciones",
+        "subtitle": "Incluye solo Wearables y Emotes",
+        "most_volume": "Volumen (MANA)",
+        "most_sales": "Cantidad de ventas",
+        "no_results_title": "No hay resultados para los filtros seleccionados",
+        "no_results_action": "{link} o seleccione diferentes",
+        "clear_filters": "Limpie los filtros",
+        "all_categories": "Todas las categorias",
+        "all_rarities": "Todas las rarezas",
+        "by_creator": "por {creator}",
+        "category": "Categorias",
+        "rarity": "Rareza",
+        "price": "Precio",
+        "wearables": {
+          "tab_title": "Wearables",
+          "item": "Item",
+          "items_sold": "Items vendidos"
+        },
+        "emotes": {
+          "tab_title": "Emotes",
+          "item": "Emote",
+          "items_sold": "Emotes vendidos"
+        },
+        "creators": {
+          "tab_title": "Creadores",
+          "creator": "Creador",
+          "collections": "Colecciones",
+          "collections_created": "{collections} Collecciones",
+          "items_sold": "Items vendidos",
+          "unique_collectors": "Coleccionistas únicos",
+          "unique_collectors_tooltip": "Número de usuarios que poseen por lo menos 1 item del Creador.",
+          "total_volume_sales": "Volumen total de ventas",
+          "total_volume_sales_tooltip": "Incluye solo ventas primarias"
+        },
+        "total_volume": "Volumen total",
+        "total_volume_tooltip": "Incluye ventas primarias y secundarias.",
+        "collectors": {
+          "tab_title": "Coleccionistas",
+          "collector": "Coleccionista",
+          "items_bought": "Items comprados",
+          "collected_items": "{amount} Items coleccionados",
+          "creators_supported": "Creadores apoyados",
+          "creators_supported_tooltip": "Número de Creadores que el usuario les ha comprado por lo menos 1 item.",
+          "unique_items_bought": "Mythic/Unique Items comprados",
+          "total_spent": "Total gastado",
+          "total_spent_tooltip": "Total de MANA gastado en los mercados primarios y secundarios"
+        }
+      }
+    },
+    "recently_sold": {
+      "title": "Vendido recientemente",
+      "last_updated": "Última actualización: {date}",
+      "tabs": {
+        "wearable": "Vestimenta",
+        "parcel": "Land",
+        "emote": "Emotes",
+        "ens": "Nombres"
+      },
+      "wearables": {
+        "item": "Item",
+        "seller": "Vendedor",
+        "buyer": "Comprador",
+        "type": "Tipo",
+        "time": "Fecha",
+        "price": "Precio"
+      },
+      "parcel": {
+        "parcel": "Parcela",
+        "time": "Fecha",
+        "price": "Precio"
+      }
+    },
+    "title": "Mercado de Decentraland",
+    "subtitle": "Bienvenido al mercado virtual de Decentraland, donde encontrarás los mejores ítems virtuales.",
+    "get_started": "Comienza a navegar",
+    "home_trending_items": "Items de tendencia",
+    "home_trending_items_subtitle": "Items más vendidos en las últimas 24hs 🔥",
+    "home_trending_items_explore_all": "Explorar todos",
+    "home_trending_items_empty_message": "Tenemos problemas para obtener los últimos items.{br}{try_again_link} o {explore_all_link}",
+    "home_trending_items_try_again": "Intentar de nuevo",
+    "home_trending_items_explore_all_wearables": "Explorar todos los items",
+    "home_recently_listed_items_subtitle": "Items que se revenden",
+    "home_latest_sales_items_subtitle": "Items siendo acuñados",
+    "home_items": "Últimos items",
+    "home_sold_items": "Últimas ventas",
+    "home_new_items": "Nuevos items",
+    "home_wearables": "Listado recientemente",
+    "home_land": "Land",
+    "home_ens": "Nombres"
+  },
+  "collection_page": {
+    "no_collection": "No Collection",
+    "unlist_from_market": "Cancelar venta",
+    "list_on_market": "Poner en venta",
+    "edit_in_builder": "Editar en el builder",
+    "on_sale": "En Venta",
+    "edit_price": "Editar precio",
+    "mint_item": "Acuñar item"
+  },
+  "store_settings": {
+    "settings": "Configuración",
+    "see_store_as_guest": "Ver tienda como invitado",
+    "store_cover": "Imagen de la tienda",
+    "description": "Descripción",
+    "website": "Pagina Web",
+    "link_start_with_error": "El link debe comenzar con {value}",
+    "size_error": "El tamaño máximo permitido es de {max}, el archivo seleccionado tiene {current}",
+    "facebook": "Handle de Facebook",
+    "twitter": "Handle de Twitter",
+    "discord": "ID de invitación de Discord",
+    "save": "Guardar",
+    "revert": "Revertir",
+    "add_cover_picture": "Haga click aquí para ponerle una imagen a la tienda",
+    "unsaved_changes": "Perderá todos los cambios no guardados, ¿está seguro de que desea continuar?"
+  },
+  "external_link_modal": {
+    "header": "Estas saliendo de Decentraland",
+    "before_link": "Al hacer clic en ACEPTAR, serás redirigido a:",
+    "after_link": "Por favor, fíjese que el link no contenga nada sospechoso para así no ser víctima de un ataque."
+  },
+  "sales": {
+    "stats": "Estadisticas",
+    "total_sales": "Cantidad de ventas",
+    "total_earnings": "Ganancias totales",
+    "royalties": "Ganancias por regalias",
+    "ethereum_earnings": "Ganancias en Ethereum",
+    "polygon_earnings": "Ganancias en Polygon",
+    "activity": "Actividad"
+  },
+  "partners_page": {
+    "partners": "Socios",
+    "latest_from": "Último de {vendor}"
+  },
+  "partner_sidebar": {
+    "assets": "{count} {count, plural, one {asset} other {assets}}"
+  },
+  "nft_list": {
+    "empty": {
+      "title": "No pudimos encontrar ningún resultado con esos filtros.",
+      "action": "<if-filters><clearFilters>Limpia los filtros</clearFilters></if-filters>"
+    },
+    "simple_empty": {
+      "title": "No pudimos encontrar ningún resultado.",
+      "action": "<if-filters><br></br><clearFilters>Limpia los filtros</clearFilters></if-filters>"
+    },
+    "empty_search": {
+      "title": "No hay resultados para \"{search}\".",
+      "action": "Compruebe si hay errores tipográficos o de ortografía, o pruebe con un término de búsqueda diferente."
+    }
+  },
+  "nft_filters": {
+    "no_items": "Sin items",
+    "on_sale": "En venta",
+    "filter": "Filtrar",
+    "order_by": "Ordenar por",
+    "results": "{count} {count, plural, one {item} other {items}}",
+    "query_results": "Mostrando {count} {count, plural, one {item} other {items}} para \"{search}\"",
+    "more_than_results": "+{count} items",
+    "query_more_than_results": "Mostrando +{count} items para \"{search}\"",
+    "search": "Buscar",
+    "search_land": "Buscar tierras...",
+    "gender": "Género",
+    "smart_wearables": "Vestimentas Interactivas",
+    "emote_attributes": {
+      "title": "Atributos de Emotes",
+      "play_mode": "Modo de reproducción",
+      "all_play_modes": "Todos",
+      "all_items": "Todos los emotes",
+      "with_sound": "con sonido",
+      "with_props": "con props"
+    },
+    "body_shapes": {
+      "title": "Género",
+      "all_items": "Todos los géneros",
+      "available_for_female": "Disponible para mujeres",
+      "available_for_male": "Disponible para hombres"
+    },
+    "status": {
+      "title": "Estado",
+      "on_sale": "En venta",
+      "on_sale_tooltip": "Incluye items disponible para mintear o publicaciones disponibles",
+      "only_minting": "Solo disponible para mintear",
+      "only_minting_tooltip": "Solo incluye items disponibles para mintear (comprando directamente al creador).",
+      "only_listing": "Solo publicaciones",
+      "only_listing_tooltip": "Solo incluye items que estan siendo re-vendidos",
+      "not_for_sale": "No a la venta"
+    },
+    "rarities": {
+      "title": "Rareza",
+      "tooltip": "La rareza determina la cantidad de NFTs que pueden ser minteados",
+      "all_items": "Todas las rarezas",
+      "count_items": "{count} {count, plural, one {rareza} other {rarezas}}"
+    },
+    "periods": {
+      "title": "Período de renta",
+      "all_items": "Todos los períodos",
+      "count_items": "{count} {count, plural, one {período} other {períodos}}",
+      "selection": "{rentalDays} {rentalDays, plural, one {día} other {días}}"
+    },
+    "price": {
+      "title": "Precio",
+      "all_items": "Todos los precios",
+      "more_than_price": "Más de <mana></mana> {price}",
+      "less_than_price": "Menos de <mana></mana> {price}",
+      "price_between": "<mana></mana> {minPrice} - <mana></mana> {maxPrice}"
+    },
+    "estate_size": {
+      "all_sizes": "Todos los tamaños",
+      "more_than_size": "Más de {size} parcelas",
+      "less_than_size": "Menos de {size} parcelas",
+      "size_between": "{min} a {max} parcelas"
+    },
+    "collection": {
+      "title": "Colección",
+      "all_items": "Todas las colecciones",
+      "search": "Buscar colecciones"
+    },
+    "creators": {
+      "title": "Creadores",
+      "tooltip": "Solo los creadores con un nombre asignado aparecerán en este filtro. Los creadores sugeridos son aquellos con más colecciones publicadas.",
+      "dropdown_header": "Sugerencias",
+      "all_creators": "Todos los creadores",
+      "search": "Buscar creadores",
+      "type_to_search": "Escriba para buscar creadores."
+    },
+    "network": {
+      "title": "Red",
+      "all_items": "Todas las redes"
+    },
+    "map": {
+      "on_rent": "Disponible para rentar",
+      "on_sale": "Disponible para comprar",
+      "owned": "Mis tierras",
+      "map_colors": "Colores del mapa",
+      "plaza": "Plaza",
+      "owned_land": "Mi tierra",
+      "rented_land": "Mis rentas",
+      "sale_or_rent": "Disponibles para venta o renta",
+      "taken": "Ocupada"
+    },
+    "more_filters": "Más filtros",
+    "location": "Ubicación",
+    "only_smart": {
+      "title": "Vestimentas interactivas",
+      "selected": "Solo vestimentas interactivas"
+    },
+    "not_on_sale": "Incluye no a la venta",
+    "for_sale": "A la venta",
+    "category": "Categoría",
+    "adjacent_to_road": "Adyacente a una calle",
+    "distance_to_plaza": {
+      "title": "Cerca de una plaza",
+      "subtitle": "Distancia a una plaza (en parcelas)",
+      "selection": "Desde {from} hasta {to} parcelas de una plaza"
+    },
+    "all_locations": "Todas las ubicaciones",
+    "price_per_day": "Precio por día"
+  },
+  "nft_land_filters": {
+    "all_land": "Todas las tierras",
+    "only_for_rent": "Disponible para rentar",
+    "only_for_sale": "Disponible para comprar"
+  },
+  "nft_card": {
+    "expires_at": "Expira {date}"
+  },
+  "nft_sidebar": {
+    "categories": "Categorías",
+    "back": "Atrás"
+  },
+  "account_sidebar": {
+    "assets": "INVENTARIO",
+    "store": "TIENDA",
+    "originals": "Originales",
+    "originals_detail": "Creaciones del usuario",
+    "listings": "Coleccionables",
+    "listings_detail": "Adquiridos por el usuario"
+  },
+  "on_sale_list": {
+    "search": "Buscar entre {count} items...",
+    "needs_attention": "Necesita atención",
+    "needs_attention_description": "Haz transferido este NFT pero tienes una orden activa. Si lo recives nuevamente, la orden será válida."
+  },
+  "on_rent_list": {
+    "listed_for_rent": "Listado para alquiler",
+    "rented_until": "Rentado hasta {end_date}",
+    "claiming_back": "Reclamando su {asset}",
+    "rented_period_over": "Periodo de renta terminado"
+  },
+  "collection_list": {
+    "search": "Buscar {count} collecciones...",
+    "item_count": "{count} items"
+  },
+  "asset_page": {
+    "actions": {
+      "cancel_sale": "Borrar publicación",
+      "terminate_listing": "Terminar publicación",
+      "update_sale": "Actualizar publicación",
+      "manage": "Gestionar",
+      "manage_in_builder": "Gestionar en el builder",
+      "update": "Actualizar precio",
+      "update_listing": "Actualizar publicación",
+      "buy": "Comprar",
+      "buy_with_mana": "Comprar con MANA",
+      "checkout": "Checkout",
+      "use_credits": "Usar créditos",
+      "get_with_credits": "Obtener con créditos",
+      "buy_with_another_token": "Usar otro token",
+      "buy_with_card": "Comprar con tarjeta",
+      "get_mana": "Obtener MANA",
+      "mint": "Comprar",
+      "bid": "Ofertar",
+      "see_listing": "Ver publicación",
+      "sell": "Vender",
+      "transfer": "Transferir",
+      "leaving_decentraland": "Saliendo de Decentraland",
+      "leaving_decentraland_description": "Aún no se pueden publicar o actualizar {vendor} assets en el Marketplace de Decentraland. ¿Quiere proceder a {vendor_link} para publicarlo ahí?",
+      "leaving_decentraland_disclaimer": "Tus NFTs van a listarse en el Marketplace de Decentraland",
+      "edit_price": "Editar precio",
+      "change_beneficiary": "Cambiar de beneficiario",
+      "mint_item": "Acuñar item",
+      "offer_made": "Tu oferta ha sido realizada",
+      "legacy_order_expired_warning": "Este listado no se muestra a los compradores en Marketplace, pero se creó con una fecha de vencimiento no válida y, por lo tanto, aún se puede comprar a través del contrato. Elimine esta lista manualmente.",
+      "legacy_order_not_expired_warning": "Este anuncio se ha creado con una fecha de caducidad no válida. Elimine este anuncio y vuelva a ponerlo a la venta para solucionar el problema."
+    },
+    "sales_rent_action_box": {
+      "until": "Desde {from_date} a {to_date}",
+      "not_for_sale": "Actualmente no disponible para la compra",
+      "in_rent_tenant": "Has rentado {asset_type, select, parcel {esta parcela} estate {este estate} other {esta LAND}} hasta <strong>{rental_end_date, date, medium}</strong>.",
+      "in_rent_owner": "{tenant} ha rentado {asset_type, select, parcel {esta parcela} estate {este estate} other {esta LAND}} hasta <strong>{rental_end_date, date, medium}</strong>.",
+      "rent_ended": "El período de renta terminó el <strong>{rental_end_date, date, medium}</strong>.",
+      "claim_back_message": "Puedes reclamar tu {asset_type, select, parcel {parcela} estate {estate} other {LAND}} o listarla nuevamente para ser rentada en la página de management.",
+      "parcel_belongs_to_estate_bid": "No es posible hacer una oferta en la tierra que pertenece a un Estate, por favor, diríjase a la página del Estate.",
+      "parcel_belongs_to_estate_rent": "No es posible rentar tierra que pertenece a un Estate, por favor, diríjase a la página del Estate.",
+      "mobile_coming_soon": "Alquilar en dispositivos mobile estará disponible pronto. Por favor use la versión Desktop para alquilar esta/e {asset}.",
+      "rented_until": "Rentado hasta {end_date}",
+      "not_enough_mana": "No tienes suficiente MANA",
+      "select_period": "Seleccionar Período"
+    },
+    "available_for_mint_popup": {
+      "available_for_mint": "Disponible para mintear",
+      "buy_directly": "Compra directo al creador"
+    },
+    "description": "Descripción",
+    "no_description": "Sin descripción",
+    "read_more": "Leer más",
+    "read_less": "Leer menos",
+    "owner": "Dueño",
+    "creator": "Creador",
+    "price": "Precio",
+    "sell_price": "Precio de venta",
+    "collection": "Colección",
+    "available": "Disponible",
+    "stock": "Stock",
+    "expires": "Expira",
+    "plaza": "Plaza",
+    "road": "Calle",
+    "district": "Distrito",
+    "jump_in": "Ingresar",
+    "part_of_estate": "Parte de {estate_name}",
+    "sold_out": "Sin Stock"
+  },
+  "proximity": {
+    "adjacent": "Adyacente",
+    "distance": "{distance} {distance, plural, one {parcela} other {parcelas}} de distancia"
+  },
+  "bid": {
+    "from": "Ofertante",
+    "price": "Precio",
+    "time_left": "Expiración",
+    "not_enough_mana_on_bid_received": "El usuario no tiene suficiente MANA para pagar esta oferta",
+    "invalid_fingerprint_on_bid_received": "Este artículo ha sido modificado desde que se hizo esta oferta y ya no es válida",
+    "invalid_seller": "Ya no eres el dueño de este artículo",
+    "not_enough_mana_on_bid_placed": "No tienes suficiente MANA para pagar por esta oferta",
+    "invalid_fingerprint_on_bid_placed": "Este artículo ha sido modificado desde que realizaste esta oferta y ya no es valida, a menos que la actualices",
+    "item_not_available": "Ya no hay stock disponible para este artículo.",
+    "created_at": "Creada"
+  },
+  "transaction_history": {
+    "title": "Últimas ventas",
+    "from": "Vendedor",
+    "to": "Comprador",
+    "type": "Tipo",
+    "when": "Fecha",
+    "price": "Precio"
+  },
+  "best_buying_option": {
+    "empty": {
+      "title": "No hay listados disponibles para este artículo",
+      "you_can": "Puedes",
+      "check_the_current_owners": "verificar los propietarios actuales",
+      "and_make_an_offer": "y hacer una oferta"
+    },
+    "minting": {
+      "title": "Compra directo al creador",
+      "price": "Precio",
+      "stock": "Stock",
+      "minting_popup": "Cuando compras un artículo, te conviertes en su primer propietario. También significa comprarlo directamente al creador",
+      "polygon_mana": "Polygon MANA",
+      "ethereum_mana": "Ethereum MANA"
+    },
+    "buy_listing": {
+      "title": "Listado más barato",
+      "price": "Precio",
+      "highest_offer": "Oferta más alta",
+      "issue_number": "Número de problema",
+      "owner": "Propietario",
+      "view_listing": "Ver listado",
+      "expires": "Expira",
+      "never_expires": "No expira nunca",
+      "no_offer": "Sin ofertas",
+      "make_offer": "Hacer Oferta",
+      "already_offer": "Ya hiciste una oferta"
+    }
+  },
+  "offers_table": {
+    "offers": "Ofertas",
+    "from": "De",
+    "published_date": "Fecha de publicación",
+    "expiration_date": "Fecha de expiración",
+    "offer": "Ofertas",
+    "your_offer": "Your offer",
+    "date_published": "Fecha de publicación",
+    "remove": "Eliminar",
+    "most_expensive": "Más Caro",
+    "recenty_offered": "Ofrecido recientemente",
+    "recently_updated": "Actualizado recientemente",
+    "accept": "Aceptar"
+  },
+  "bids_table": {
+    "bids": "Ofertas",
+    "no_bids": "Sin ofertas",
+    "make_offer": "Hacer Oferta"
+  },
+  "listings_table": {
+    "other_available_listings": "Otros coleccionables disponibles",
+    "owner": "Dueño",
+    "issue_number": "Número de emisión",
+    "issue_number_asc": "Número de emisión ↑",
+    "issue_number_desc": "Número de emisión ↓",
+    "listings": "Coleccionables",
+    "published_date": "Fecha de publicación",
+    "expiration_date": "Fecha de expiración",
+    "price": "Precio",
+    "offer": "Oferta",
+    "cheapest": "Más baratos",
+    "newest": "Más nuevos",
+    "oldest": "Más viejos",
+    "there_are_no_listings": "No hay collecionables disponibles",
+    "view_listing": "Ver listado"
+  },
+  "owners_table": {
+    "owner": "Dueño",
+    "issue_number": "Número de emisión",
+    "issue_number_asc": "Número de emisión ↑",
+    "issue_number_desc": "Número de emisión ↓",
+    "owners": "Dueños",
+    "there_are_no_owners": "Aún no hay dueños",
+    "become_the_first_one": "Se el primero!"
+  },
+  "rental_history": {
+    "title": "Últimas rentas",
+    "lessor": "Locador",
+    "tenant": "Locatario",
+    "started_at": "Comenzó en",
+    "price_per_day": "Precio",
+    "selected_days": "{days} días",
+    "mobile_price": "{days} días por {pricePerDay} / día"
+  },
+  "body_shape": {
+    "male": "Hombre",
+    "female": "Mujer",
+    "unisex": "Unisex"
+  },
+  "rarity": {
+    "unique": "Único",
+    "mythic": "Mítico",
+    "exotic": "Exótico",
+    "legendary": "Legendario",
+    "epic": "Épico",
+    "rare": "Raro",
+    "uncommon": "Poco común",
+    "common": "Común"
+  },
+  "wearable": {
+    "category": {
+      "body_shape": "Cuerpo",
+      "earring": "Aros",
+      "eyebrows": "Cejas",
+      "eyes": "Ojos",
+      "eyewear": "Gafas",
+      "facial_hair": "Barba",
+      "feet": "Pies",
+      "hair": "Cabello",
+      "hat": "Sombrero",
+      "helmet": "Cazco",
+      "lower_body": "Piernas",
+      "mask": "Mascara",
+      "mouth": "Boca",
+      "tiara": "Tiara",
+      "top_head": "Cabeza",
+      "upper_body": "Torso",
+      "skin": "Skin",
+      "hands_wear": "Manos"
+    },
+    "smart": "Vestimenta Interactiva",
+    "smart_badge": "Interactivo"
+  },
+  "emote": {
+    "category": {
+      "dance": "Baile",
+      "stunt": "Truco",
+      "greetings": "Saludos",
+      "fun": "Divertido",
+      "poses": "Poses",
+      "reactions": "Reacciones",
+      "horror": "Horror",
+      "miscellaneous": "Misceláneos"
+    },
+    "play_mode": {
+      "simple": "Reproduce una vez",
+      "loop": "Reproduce en bucle"
+    },
+    "sound": "Sonido",
+    "props": "Accesorios"
+  },
+  "smart_wearable": {
+    "play_showcase": "Reproducir vista previa",
+    "required_permission": {
+      "error_title": "Error cargando permisos",
+      "title": "Esta vestimenta inteligente requiere {count, plural, one {el siguiente permiso} other {los siguientes permisos}}",
+      "tooltip_info": "Para usar esta vestimenta interactiva, debe otorgarle los siguientes permisos para experimentar el efecto completo de la misma. {learn_more}",
+      "allow_to_move_player_inside_scene": "Mover jugador",
+      "allow_to_trigger_avatar_emote": "Activar gestos",
+      "allow_media_hostnames": "Reproducir contenido multimedia",
+      "use_web3_api": "Interacción con tu billetera",
+      "use_fetch": "Comunicarse con otros servidores",
+      "use_websocket": "Intercambiar datos",
+      "open_external_link": "Abrir enlaces externos"
+    }
+  },
+  "wearable_preview": {
+    "toggle_wearable": "Vestimenta",
+    "toggle_avatar": "Pruébatelo",
+    "missing_representation_error": {
+      "male": "hombre",
+      "female": "mujer",
+      "message": "Esta vestimenta no tiene representación de {bodyShape}"
+    },
+    "play_emote": "Reproducir Emote",
+    "stop_emote": "Parar Emote"
+  },
+  "sell_page": {
+    "title": "Poner en venta",
+    "update_title": "Actualizar venta",
+    "subtitle": "Pon un precio y fecha de expiración para {name}.",
+    "update_subtitle": "Pon un nuevo precio y fecha de expiración para {name}.",
+    "price": "Precio",
+    "expiration_date": "Fecha de expiración",
+    "invalid_date": "Esta fecha ya pasó",
+    "submit": "Poner en venta",
+    "update_submit": "Actualizar",
+    "authorization": {
+      "title": "Poner el artículo en venta",
+      "confirm_transaction_title": "Confirme la transacción para poner el artículo en venta"
+    },
+    "confirm": {
+      "title": "Por favor confirma",
+      "line_one": "Estás por poner en venta {name} por {amount}.",
+      "line_two": "Por favor vuelve a escribir el precio para confirmar:",
+      "warning": "Cuidado: este precio esta muy por debajo al valor de mercado"
+    },
+    "cancel_order_warning": "Se requiere acción: para actualizar el nuevo precio, debe eliminar la venta anterior primero",
+    "cancel_order": "Cancelar orden"
+  },
+  "buy_page": {
+    "title": "Comprar {category}",
+    "subtitle": "Estás por comprar {name} por {amount}.",
+    "not_for_sale": "{name} no esta en venta.",
+    "buy": "Comprar",
+    "no_fingerprint": "No se pudo cargar la identificación del Estate.",
+    "is_owner": "Ya eres el dueño de {name}.",
+    "not_enough_mana": "No tienes suficiente MANA para comprar {name} por {amount}."
+  },
+  "buy_with_mana_page": {
+    "title": "Comprando {name}",
+    "subtitle": "Estás por comprar {name} por {amount}.",
+    "not_for_sale": "{name} no esta en venta.",
+    "buy": "Comprar con MANA",
+    "no_fingerprint": "No se pudo cargar la identificación del Estate.",
+    "is_owner": "Ya eres el dueño de {name}.",
+    "not_enough_mana": "No tienes suficiente MANA para comprar {name} por {amount}.",
+    "authorization": {
+      "title_action": "compra",
+      "action": "comprar"
+    }
+  },
+  "accept_bid": {
+    "authorization": {
+      "title": "Aceptar oferta",
+      "confirm_transaction": {
+        "title": "Confirma la transacción para aceptar la oferta"
+      }
+    }
+  },
+  "buy_with_card_page": {
+    "title": "Comprando {name}",
+    "subtitle": "Estás por comprar {name} por {amount}.",
+    "not_for_sale": "{name} no esta en venta.",
+    "buy": "Comprar con tarjeta",
+    "no_fingerprint": "No se pudo cargar la identificación del Estate.",
+    "is_owner": "Ya eres el dueño de {name}.",
+    "not_enough_mana": "No tienes suficiente MANA para comprar {name} por {amount}.",
+    "regions_where_operates": "regiones donde opera Transak",
+    "explanation": "{link_to_transak} procesa los pagos con tarjeta y están disponibles para las {regions}. Se admiten tanto tarjetas de crédito como de débito."
+  },
+  "buy_with_crypto_modal": {
+    "title": "Confirma tu compra",
+    "pay_with": "Pagar con",
+    "balance": "Balance",
+    "item_cost": "Costo del item",
+    "fee_cost": "Tarifa estimada",
+    "buy_now": "Comprar ahora",
+    "buy_with_card": "Comprar con tarjeta",
+    "get_mana": "Comprar MANA",
+    "not_enough_funds": "No tienes fondos suficientes en {token} para pagar este artículo. Obtenga MANA, pague con un token diferente o pague con tarjeta.",
+    "transaction_fee_covered": "Las tarifas de gas están {covered} al pagar con MANA",
+    "covered_by_dao": "cubiertos por la DAO",
+    "free": "gratis",
+    "switch_network": "Cambiar Red a {chain}",
+    "confirm_switch_network": "Confirmar el cambio de red en tu Wallet",
+    "confirm_transaction": "Confirmar la transacción en tu Wallet",
+    "buying_asset": "Comprando...",
+    "authorizing_purchase": "Autorizando compra...",
+    "total": "Total",
+    "route_unavailable": "Comprar con {token} no está disponible en este momento. Obtenga MANA, pague con un token diferente o pague con tarjeta.",
+    "exchange_rate": "Exchange Rate",
+    "durations": {
+      "transaction_duration": "Duración de la transacción",
+      "fast": "Rápida ≈ 2s",
+      "normal": "Normal ≈ 20s",
+      "slow": "Lenta ≈ 1m"
+    },
+    "asset_description": {
+      "ens": "Nombres de Decentraland",
+      "emotes": "Emotes de Decentraland",
+      "wearables": "Wearables de Decentraland",
+      "land": "Lands de decentraland",
+      "other": "Coleccionables de Decentraland"
+    },
+    "tooltip": {
+      "cross_chain": "La tarifa estimada incluye el costo de la red y la tarifa de compra entre cadenas que debe pagar directamente con su billetera.",
+      "same_network": "La tarifa estimada incluye el costo de la red que debes pagar directamente con tu billetera."
+    },
+    "insufficient_funds": "No tienes fondos suficientes en {token} para pagar este Item. Obtenga MANA, <orPayWithOtherToken> o </orPayWithOtherToken> intente pagar con otro token<card> o pague con tarjeta</card>.",
+    "token_and_chain_selector": {
+      "available_chains": "Redes disponibles",
+      "select_chain": "Selecciona una red",
+      "available_tokens": "Monedas disponibles en {chain}",
+      "select_token": "Selecciona una moneda",
+      "no_matches": "No hay coincidencias para {search}..."
+    },
+    "price_too_low": "Las transacciones de MANA solo están libres de tarifa de gas si el artículo cuesta al menos 1 MANA. Para obtener este artículo, cambia tu red a Polygon para pagar la tarifa del gas con MATIC. {learn_more}",
+    "remember_transaction_fee_covered": "Pague con Polygon MANA para que el DAO cubra las tarifas de gas (el artículo debe costar al menos 1 MANA).",
+    "learn_more": "Aprende más"
+  },
+  "partially_supported_network_card": {
+    "content": "Estás conectado a la red de Polygon para comprar artículos por debajo de <mana>1</mana>. Deberá tener MATIC en su billetera para cubrir la tarifa de transacción de esta compra."
+  },
+  "price_too_low": {
+    "minimum_price": "La cantidad mínima admitida para transacciones sin costo es {price}",
+    "get_item_in_network": "Para obtener este item, deberá cambiar su red a {network} y luego cubrir el costo de la transacción con {token}.",
+    "switch_network": "Cambiar a {red}"
+  },
+  "mint_with_mana_page": {
+    "title": "Comprando {name}",
+    "subtitle": "Estás por comprar {name} por {amount}.",
+    "not_for_sale": "{name} no esta disponible, pero puedes buscarlo en el {secondary_market_link}.",
+    "secondary_market": "mercado secundario",
+    "action": "Comprar con MANA",
+    "no_fingerprint": "No se pudo cargar la identificación del Estate.",
+    "is_owner": "Ya eres el dueño de {name}.",
+    "not_enough_mana": "No tienes suficiente MANA para comprar {name} por {amount}.",
+    "authorization": {
+      "title_action": "compra",
+      "action": "comprar"
+    }
+  },
+  "mint_with_card_page": {
+    "title": "Comprando {name}",
+    "subtitle": "Estás por comprar {name} por {amount}.",
+    "not_for_sale": "{name} no esta en venta.",
+    "action": "Comprar con tarjeta",
+    "no_fingerprint": "No se pudo cargar la identificación del Estate.",
+    "is_owner": "Ya eres el dueño de {name}.",
+    "not_enough_mana": "No tienes suficiente MANA para comprar {name} por {amount}.",
+    "regions_where_operates": "regiones donde opera Transak",
+    "explanation": "{link_to_transak} procesa los pagos con tarjeta y están disponibles para las {regions}. Se admiten tanto tarjetas de crédito como de débito."
+  },
+  "buy_with_card_explanation_modal": {
+    "title": "Comprar con tarjeta",
+    "explanation": "Los pagos con tarjeta son procesados por {link_to_transak}.\nTransak cobra una tarifa por su servicio. Verás el precio final antes de confirmar la compra.",
+    "learn_more": "Más información sobre los pagos con tarjeta"
+  },
+  "asset_purchase_with_card_pending_page": {
+    "title": "¡Tu item está en camino!",
+    "status": "Procesando la Transacción",
+    "description": "La transacción puede tomar hasta 3 minutos en ser procesada.",
+    "cta": "Volver al marketplace"
+  },
+  "asset_purchase_with_card_complete_page": {
+    "title": "¡Todo listo!",
+    "description": "Puedes encontrar el item en {my_assets}.",
+    "cta": "Explorar más items"
+  },
+  "asset_price_has_changed": "El precio de {name} se ha actualizado a {amount}.",
+  "bid_page": {
+    "title": "Haz una oferta",
+    "subtitle": "Pon un precio y una fecha de expiración para tu oferta sobre {name}.",
+    "price": "Precio",
+    "expiration_date": "Fecha de expiración",
+    "invalid_date": "Esta fecha ya pasó",
+    "not_enougn_mana": "No tienes suficiente MANA",
+    "submit": "Ofertar",
+    "rental_executed": "{asset_type, select, parcel {La parcela} estate {El estate} other {la tierra}} está rentada hasta <strong>{rental_end_date, date, medium}</strong>. El dueño va a poder aceptar tu oferta sólo después de haber reclamado su {asset_type, select, parcel {parcela} estate {estate} other {tierra}}.",
+    "confirm": {
+      "title": "Por favor confirma",
+      "create_bid_line_one": "Estás por hacer una oferta en {name} por {amount}.",
+      "accept_bid_line_one": "Estás por aceptar una oferta en {name} por {amount}.",
+      "accept_bid_line_two": "Por favor vuelve a escribir el precio para confirmar:"
+    },
+    "authorization": {
+      "title_action": "oferta",
+      "action": "hacer una oferta para",
+      "confirm_transaction_title": "Firmar para colocar la oferta",
+      "confirm_transaction_action": "Firmar"
+    }
+  },
+  "my_bids_page": {
+    "bids_received": "Ofertas recibidas",
+    "bids_placed": "Ofertas realizadas",
+    "bids_archived": "Ofertas Archivadas",
+    "show_archived": "Mostrar Archivadas ({amount})",
+    "show_received": "Mostrar Recibidas ({amount})",
+    "empty_received": "No haz recibido ofertas aún...",
+    "empty_archived": "No haz archivado ofertas aún...",
+    "empty_placed": "No haz realizado ofertas aún...",
+    "archive": "Archivar",
+    "unarchive": "Desarchivar"
+  },
+  "cancel_sale_page": {
+    "title": "Cancelar venta",
+    "subtitle": "Estás por cancelar la venta de {name} por {amount}.",
+    "not_for_sale": "{name} no esta en venta.",
+    "invalid_owner": "No eres el dueño de {name}.",
+    "submit": "Confirmar"
+  },
+  "browse_page": {
+    "primary_market_title": "Tienda",
+    "primary_market_subtitle": "Creados por los usuarios",
+    "secondary_market_title": "Clasificados",
+    "secondary_market_subtitle": "Artículos de reventa",
+    "back_to_top": "Volver arriba"
+  },
+  "account_page": {
+    "copied": "Copiado ✔",
+    "copied_capitalized": "COPIADO ✔",
+    "copy_address": "COPIAR DIRECCIÓN",
+    "primary_market_title": "Creaciones",
+    "primary_market_subtitle": "Creado por este usuario",
+    "secondary_market_title": "Colecciones",
+    "secondary_market_subtitle": "Colleccionado por este usuario",
+    "revoke": "Revocar permisos del contrato"
+  },
+  "settings_page": {
+    "authorizations": "Autorizaciones",
+    "buy_more_mana": "COMPRAR MÁS",
+    "copy_address": "COPIAR DIRECCIÓN",
+    "copied": "COPIADO ✔",
+    "authorization_error": "No pudimos cargar tu autorizaciones, intenta nuevamente.",
+    "authorization_error_contact": "Si el error continua no dudes en contactarnos",
+    "for_buying": "Para comprar",
+    "for_bidding": "Para ofertar",
+    "authorization_Marketplace_MANAToken": "MANA",
+    "for_selling": "Para vender",
+    "for_renting": "Para alquilar",
+    "pending_tx": "Transaccion pendiente, haz click aquí para ir a tu pantalla de actividad y ver más información"
+  },
+  "authorization": {
+    "authorize": "Autoriza al contrato de {contract_link} a operar {symbol} por tí en {network}",
+    "allowed": "Haz autorizado al contrato de {contract_link} a operar {symbol} por tí",
+    "approved": "Haz autorizado al contrato de {contract_link} a operar {symbol} por tí",
+    "disallowed": "Haz desautorizado al contrato de {contract_link} a operar {symbol} por tí",
+    "disapproved": "Haz desautorizado al contrato de {contract_link} a operar {symbol} por tí"
+  },
+  "authorization_modal": {
+    "title": "Autorizar {token}",
+    "description": "Para poder continuar deberás autorizar al contrato de {contract} a operar tus tokens de {token}.{br}Esto solo debe realizarse una única vez, y siempre puedes gestionar tus autorizaciones desde la pagina de {settings_link}."
+  },
+  "transfer_page": {
+    "title": "Transferir {category}",
+    "subtitle": "Estás por transferir {name}.",
+    "for_sale": "{name} no puede ser transferido porque esta en venta.",
+    "invalid_owner": "No eres el dueño de {name}.",
+    "invalid_address": "Dirección invalida",
+    "recipient": "Direccion del destinatario",
+    "warning": "Recuerda que transferir es una operación irreversible.{br}Por favor verifica que la dirección sea la correcta.",
+    "submit": "Transferir"
+  },
+  "activity_page": {
+    "latest_activity": "Última Actividad",
+    "clear_history": "Limpiar Historial",
+    "empty": "No tienes actividad aún.",
+    "clear_history_modal": {
+      "title": "̉̉̉̉̉̉̉¿Estás seguro?",
+      "text": "Estas por limpiar tu historial de actividad. ¿Deseas proseguir?"
+    }
+  },
+  "transaction": {
+    "action": {
+      "approved": "aprobadó",
+      "unapproved": "desaprobó"
+    },
+    "rental": {
+      "contract": "Contrato de renta"
+    },
+    "detail": {
+      "approve_token": "{action} al contrato de {contract} para que opere tokens de {token} por tí.",
+      "create_order": "Pusiste {name} en venta por {price}.",
+      "cancel_order": "Cancelaste la venta de {name} por {price}.",
+      "execute_order": "Compraste {name} por {price}.",
+      "transfer": "Transferiste {name} a {address}.",
+      "place_bid": "Hiciste una oferta de {price} por {name}.",
+      "accept_bid": "Aceptaste una oferta de {price} por {name}.",
+      "cancel_bid": "Cancelaste una oferta de {price} por {name}.",
+      "claim_asset": "Reclamaste tu {name} del {contract}.",
+      "remove_rental": "Removiste tu {name} del listado de rentas.",
+      "accept_rental": "Aceptaste una renta en {name} pagando {pricePerDay} por día por {duration} {duration, plural, one {día} other {días}}.",
+      "buy_mana": "Compraste {amount} {name} a través de {gateway}"
+    }
+  },
+  "mana": {
+    "running_on": "MANA en la red {network}"
+  },
+  "wallet": {
+    "sign_in_required": "Necesitas {sign_in} para acceder a esta página.",
+    "sign_in": "iniciar sesión"
+  },
+  "slideshow": {
+    "view_all": "Ver Todo",
+    "empty_message": "Hubo un error al cargar los elementos."
+  },
+  "highlights": {
+    "title": "Destacados"
+  },
+  "parcel_coordinates": {
+    "title": "Parcelas",
+    "show_more": "MOSTRAR MÁS",
+    "show_less": "MOSTRAR MENOS",
+    "and_more": "y <strong>{amount}</strong> más..."
+  },
+  "price_change_notice": {
+    "message": "El precio puede variar debido a cambios en el mercado"
+  },
+  "networks": {
+    "ethereum": "Ethereum",
+    "matic": "Polygon"
+  },
+  "tokens": {
+    "ethereum": "ETH",
+    "matic": "MATIC"
+  },
+  "toast": {
+    "meta_transaction_failure": {
+      "title": "Error de Meta transacción",
+      "body": "Ocurrió un error publicando la meta transacción.{br}Intentelo de nuevo o ingrese a nuestro {discord_link} para obtener más información."
+    },
+    "contract_account": {
+      "title": "No soportado",
+      "body": "Las billeteras basadas en smart contracts no soportan meta-transacciones"
+    },
+    "store_update_success": {
+      "title": "Éxito",
+      "body": "Configuración de tienda actualizada correctamente"
+    },
+    "remove_listing_success": {
+      "title": "Listado de alquiler removido",
+      "body": "Tu tierra no está más disponbile para la renta."
+    },
+    "claim_land_success": {
+      "title": "Haz reclamado tu tierra",
+      "body": "Tu tierra ha sido reclamada correctamente."
+    },
+    "create_rental_success": {
+      "title": "Listado de alquiler creado",
+      "body": "Tu tierra ha sido listada para la renta con éxito."
+    },
+    "update_rental_success": {
+      "title": "Listado de alquiler actualizado",
+      "body": "El listado ha sido actualizado con éxito."
+    },
+    "upsert_rental_success": {
+      "show_listing": "Mostrar listado"
+    },
+    "buy_nft_with_card_error": {
+      "title": "Error al enviar la transacción",
+      "body": "Actualice la página e intente enviar la transacción nuevamente.",
+      "refresh": "Actualizar"
+    },
+    "pick_item_as_favorite_success": {
+      "title": "Artículo agregado a la lista de deseos",
+      "body": "{name} se agregó con éxito a la lista de deseos",
+      "view_my_lists": "Ver Mis Listas"
+    },
+    "pick_item_as_favorite_failure": {
+      "title": "Error al agregar un elemento a la lista de deseos",
+      "body": "Hubo un error al agregar {nombre} a la lista de deseos",
+      "try_again": "Intentar de nuevo"
+    },
+    "unpick_item_as_favorite_success": {
+      "title": "Elemento eliminado de la lista de deseos",
+      "body": "{name} fue eliminado con éxito de la lista de deseos",
+      "undo": "Deshacer"
+    },
+    "unpick_item_as_favorite_failure": {
+      "title": "Error al eliminar el elemento de la lista de deseos",
+      "body": "Hubo un error al eliminar {nombre} de la lista de deseos",
+      "try_again": "Intentar de nuevo"
+    },
+    "fetch_assets_failure": {
+      "title": "El sitio no pudo cargar",
+      "body": "Hubo un problema al cargar el contenido de esta página. {reload_page} o inténtalo de nuevo más tarde.",
+      "reload_page": "Recargue la página"
+    },
+    "update_list_success": {
+      "title": "Lista actualizada",
+      "body": "La lista <b>{name}</b> fue actualizada satisfactoriamente."
+    },
+    "delete_list_success": {
+      "title": "Lista eliminando",
+      "body": "La lista <b>{name}</b> fue removida satisfactoriamente."
+    },
+    "delete_list_failure": {
+      "title": "Error eliminando lista",
+      "body": "Ocurrió un error al eliminar la lista <b>{name}</b>. Por favor inténtelo de nuevo más tarde."
+    },
+    "bulk_pick": {
+      "success": {
+        "title": "Guardar en listas",
+        "body": {
+          "add": {
+            "one": "{item_name} fue añadido a {first_list_name}.",
+            "two": "{item_name} fue añadido a {first_list_name} y {second_list_name}.",
+            "many": "{item_name} fue añadido a {first_list_name} y a otras {count} listas."
+          },
+          "remove": {
+            "one": "{item_name} fue removido de {first_list_name}.",
+            "two": "{item_name} fue removido de {first_list_name} y {second_list_name}.",
+            "many": "{item_name} fue removido de {first_list_name} y de otras {count} lists."
+          }
+        },
+        "undo": "Deshacer"
+      },
+      "failure": {
+        "title": "Error guardando en listas",
+        "body": {
+          "add": {
+            "one": "Ocurrió un error al agregar el item {item_name} a {first_list_name}.",
+            "two": "Ocurrió un error al agregar el item {item_name} a {first_list_name} y {second_list_name}.",
+            "many": "Ocurrió un error al agregar el item {item_name} a {first_list_name} y a otras {count} listas."
+          },
+          "remove": {
+            "one": "Ocurrió un error al remover {item_name} de {first_list_name}.",
+            "two": "Ocurrió un error al remover {item_name} de {first_list_name} y {second_list_name}.",
+            "many": "Ocurrió un error al remover {item_name} de {first_list_name} y de otras {count} listas."
+          }
+        },
+        "try_again": "Intentar de nuevo"
+      }
+    },
+    "claim_name_success": {
+      "title": "Ganaste acceso a Worlds!",
+      "body": "Construí tu espacio personal en el metaverso.",
+      "cta": "Ver mis worlds"
+    },
+    "cross_chain_tx": {
+      "body": "La transacción puede tardar hasta <highlight>3 miuntos</highlight> para ser procesada.<br></br>Puedes seguir su progreso en los siguientes enlaces:",
+      "view_transaction": "Ver transacción"
+    },
+    "bid_placed_success": {
+      "title": "Felicidades",
+      "message": "La oferta para <strong>{assetName}</strong> fue enviada de manera exitosa",
+      "my_bids": "Mis activos ofertas"
+    }
+  },
+  "maintainance": {
+    "notice": "Estamos en mantenimiento, volveremos pronto!"
+  },
+  "rental_modal": {
+    "authorization": {
+      "title_action": "alquiler",
+      "action": "alquilar"
+    },
+    "confirm_rent_step": {
+      "title": "Confirmar renta",
+      "operator_address": "Dirección del operador",
+      "operator_notice": "Yo seré el operador de la LAND",
+      "wrong_operator": "Por favor inserte una dirección válida",
+      "subtitle": "Estas a punto de rentar {land_name} por {duration} dias (desde {start_date} hasta {end_date}) por un precio total de {price}",
+      "subtitle_2": "Por favor re-ingrese el precio y la dirección de quien será el operador de la Land:",
+      "confirm_transaction": "Confirme la transacción en su billetera para continuar"
+    },
+    "rent_confirmed_step": {
+      "title": "Land rentada",
+      "subtitle": "¡Felicitaciones! Has rentado esta Land hasta {end_date}",
+      "build-more": {
+        "title": "Póngase creativo con el Scene Builder",
+        "subtitle": "Escenas simples fáciles de crear."
+      },
+      "get-creative": {
+        "title": "Cree escenas más complejas utilizando nuestro SDK",
+        "subtitle": "Ideal si tiene experiencia técnica."
+      },
+      "manage-land": {
+        "title": "Administrar Land",
+        "subtitle": "Agregue escenas existentees o revise los permisos."
+      },
+      "onlyAvailableOnDesktop": "Solo disponible en la versión Desktop."
+    },
+    "authorization_step": {
+      "title": "Poner en alquiler",
+      "notice_line_one": "Antes de listar tu {assetType} en alquiler necesitas autorizar al contrato de {link} a operar tu {assetType}, de la misma forma que cuando deseas vender tu {assetType}.",
+      "notice_line_two": "Cuando el período de alquiler termine tiene dos opciones:",
+      "notice_line_two_option_one_title": "Reclamar tu tierra para poder usarla",
+      "notice_line_two_option_one_text": "Necesitaras enviar una nueva transacción y pagar su costo",
+      "notice_line_two_option_two_title": "Listar tu tierra en alquiler de nuevo",
+      "notice_line_two_option_two_text": "Esto es gratis",
+      "notice_link": "Alquiler",
+      "confirm": "Confirma la transacción en tu billetera"
+    },
+    "authorization_step_again": {
+      "title": "Volver a publicar para la renta",
+      "notice_line_one": "Puedes volver a publicar tu {assetType} para la renta sin costo.",
+      "notice_line_two": "El Inquilino actual tendrá permisos de operador hasta que se vuelva a alquilar",
+      "notice_line_three": "Para retomar los permisos del operador, reclámalos (tarifas de gas involucradas)",
+      "cancel": "Cancelar"
+    },
+    "create_listing_step": {
+      "titles": {
+        "edit": "Editar listado de alquiler",
+        "create": "Poner en alquiler"
+      },
+      "editing_cost_warning": "Editar la publicación va a requerir ejecutar una nueva transacción para la cual será necesario pagar los costos de la misma.",
+      "update_listing": "Actualizar listado de alquiler",
+      "remove_listing": "Remover listado de alquiler",
+      "price_per_day": "Precio por día",
+      "listing_expiration_date": "Fecha de expiración del clasificado",
+      "periods": "Período del alquiler",
+      "periods_tooltip": "Selecciona la cantidad de días por las que estas dispuesto a alquilar tu tierra",
+      "expiration_date_tooltip": "Si nadie alquila tu Land, el listado se removerá en esta fecha",
+      "period_options": {
+        "one_day": "1 día",
+        "one_week": "7 días",
+        "one_month": "30 días",
+        "two_months": "60 días",
+        "quarter_year": "90 días",
+        "half_year": "180 días",
+        "one_year": "365 días"
+      },
+      "put_for_rent": "Poner en alquiler",
+      "invalid_date": "Fecha inválida",
+      "invalid_price": "Precio inválido",
+      "less_than_min_price": "El precio por día no puede ser menor a 1 MANA",
+      "dao_fee": "2.5% del precio irá para la DAO"
+    },
+    "confirmation_step": {
+      "title": "Confirmar clasificado",
+      "periods": "Períodos",
+      "notice_line_one": "Revisa y confirma el precio y los períodos de alquiler que has seleccionado.",
+      "notice_line_two": "Poner en alquiler es gratis, pero editar o cancelar el clasificado una vez hecho requerirá que envies una transacción, y deberas cubrir el costo de la misma.",
+      "price_per_day": "Precio por día",
+      "listing_expiration_date": "Fecha de expiración del clasificado"
+    },
+    "confirmation_edit_step": {
+      "title": "Editar Anuncio",
+      "notice_line_one": "Para poder editar el anuncio, debes completar las siguientes acciones:",
+      "action_one_title": "Remover la información anterior",
+      "action_one_subtitle": "Esto es por razones de seguridad.",
+      "confirm": "Confirmar Transacción",
+      "action_two_title": "Firmar mensaje",
+      "done": "Listo"
+    }
+  },
+  "manage_asset_page": {
+    "open_in_builder": "Abrir en el builder",
+    "land_is_locked": "Esta acción no será posible de realizar hasta que la renta haya finalizado y {asset} haya sido reclamada.",
+    "transfer": "Transferir",
+    "sell": {
+      "sell_title": "Venta",
+      "selling_title": "Vendiendo",
+      "list_for_sale": "Publicar para la venta",
+      "price": "Precio",
+      "expiration_date": "Fecha de expiración"
+    },
+    "rent": {
+      "rent_title": "Renta",
+      "renting_title": "Rentando",
+      "price": "Precio",
+      "expiration_date": "Fecha de expiración de la publicación",
+      "rent_periods": "Períodos de renta",
+      "list_for_rent": "Publicar para la renta",
+      "view_listing": "Ver listado",
+      "start_date": "Fecha de comienzo",
+      "end_date": "Fecha de finalización",
+      "rented_until": "En renta hasta el {date} por {tenant}",
+      "rent_end": "El período de renta terminó! Puedes reclamar tu {asset} a {tenant}",
+      "claim_asset": "Reclamar {asset}",
+      "list_for_rent_again": "Volver a publicar para la renta",
+      "claiming_land": "Reclamando su {asset}. El proceso puede tardar hasta 24hs.",
+      "view_transaction": "Ver transacción",
+      "mobile_coming_soon": "Alquilar en dispositivos mobile estará disponible pronto. Por favor use la versión Desktop para alquilar esta/e {asset}.",
+      "claiming_back": "Reclamando su {asset}",
+      "unclaimed_message": "Tienes una renta activa pero el {asset} todavía está sin reclamar. Reclámala para poder venderla o transferirla"
+    },
+    "highlights": {
+      "title": "Destacados",
+      "road": "Calle",
+      "plaza": "Plaza",
+      "district": "Distrito"
+    }
+  },
+  "details_box": {
+    "title": "Detalles del item",
+    "network": "Red",
+    "stock": "Stock",
+    "issue_number": "Número de emisión",
+    "sold_out": "Sin Stock",
+    "owner": "Dueño",
+    "order_expiration": "Expiración de la orden",
+    "expires_at": "Expira en",
+    "expires_at_info": "Cuando el collecionable expire, dejará de estar disponible para comprar",
+    "rental_expiration": "Expiración de la renta"
+  },
+  "claim_land_modal": {
+    "title": "Reclamar {asset}",
+    "action": "Reclamar {asset}",
+    "question": "¿Está seguro de que quiere reclamar su {asset}?",
+    "disclaimer": "Esto requerirá una transacción que implicará gastos que deberá costear.",
+    "confirm_transaction": "Confirme la transacción en su billetera para continuar"
+  },
+  "remove_rental_modal": {
+    "title": "Quitar listado de alquiler",
+    "action": "Quitar listado de alquiler",
+    "question": "¿Está seguro de que quiere quitar el listado de alquiler?",
+    "disclaimer": "Esto requerirá una transacción que implicará gastos que deberá costear.",
+    "confirm_transaction": "Confirme la transacción en su billetera para continuar"
+  },
+  "asset_card": {
+    "rental_bubble": {
+      "listed_for_rent": "Listada para la renta",
+      "rented_until": "Rentada hasta {endDate, date, medium}",
+      "claiming_back": "Reclamando {asset_type, select, parcel {la parcel} estate {el estate} other {LAND}}",
+      "rental_ended": "Período de renta terminado"
+    },
+    "listings": "{count} {count, plural, one {Collecionable} other {Collecionables}}",
+    "available_for_mint": "Compra directo al creador",
+    "cheapest_listing": "Coleccionable más barato",
+    "not_for_sale": "No disponible para la venta",
+    "owners": "{count} {count, plural, one {Dueño} other {Dueños}}",
+    "cheapest_option": "Más barato",
+    "cheapest_option_range": "Más barato en el rango",
+    "most_expensive": "Más Caro",
+    "most_expensive_range": "Más Caro en el rango",
+    "also_minting": "Compra directo al creador"
+  },
+  "rentals_promotional_modal": {
+    "title": "¡La renta de tierras está disponible!",
+    "browse_listings": "Ver tierras para rentar",
+    "list_your_land": "Lista tu tierra a la renta",
+    "description": "<p>Si eres dueño de tierra ahora puede ganar MANA rentando tus parcelas o estates a creadores de contenido.</p> <p>¿Eres un creador de contenido? Ahora puedes publicar tu escenas en la Genesis City sin la necesidad de poseer tierras.</p> <p>Si quieres leer más sobre ésto, <a>lee nuestro blog post</a>.</p>"
+  },
+  "atlas": {
+    "price": "Precio",
+    "owner": "Dueño",
+    "for_sale_and_rent": "Disponible para la compra o renta",
+    "for_sale": "Disponible para la compra",
+    "for_rent": "Disponible para la renta"
+  },
+  "favorites_counter": {
+    "pick_label": "añadir a la lista de deseos",
+    "unpick_label": "eliminar de la lista de deseos"
+  },
+  "favorites_modal": {
+    "title": "Guardado por",
+    "disclaimer": "Solo se cuentan las cuentas con más de 1 VP.",
+    "empty": "Los usuarios no han guardado este artículo"
+  },
+  "list_page": {
+    "default_title": "Lista de deseos",
+    "edit_list": "Editar Lista",
+    "delete_list": "Eliminar Lista",
+    "last_updated_at": "Última actualización",
+    "disable_sharing": "Las listas privadas no se pueden compartir.",
+    "disable_kebab_menu": "La lista de deseos no se puede editar ni eliminar.",
+    "empty": {
+      "owner": {
+        "title": "No tienes elementos guardados en esta lista",
+        "subtitle": "Descubre items increíbles.",
+        "action": "Explora los colleccionables"
+      },
+      "public": {
+        "title": "Esta lista está vacía",
+        "subtitle": "Intenta con otra lista."
+      }
+    },
+    "error": {
+      "not_found": {
+        "title": "Esta lista es privada o no existe.",
+        "subtitle": "Intenta con otra lista."
+      },
+      "could_not_load": {
+        "title": "¡Ups! No se pudo cargar esta lista.",
+        "subtitle": "Por favor, inténtalo de nuevo.",
+        "action": "Intentar de nuevo"
+      }
+    }
+  },
+  "lists_page": {
+    "title": "Mis listas",
+    "subtitle": "{count} {count, plural, one {lista} other {listas}}",
+    "create_list": "Crear lista",
+    "error": {
+      "title": "¡Ups! No se pudieron cargar las listas.",
+      "subtitle": "Por favor, inténtalo de nuevo.",
+      "action": "Intentar de nuevo"
+    }
+  },
+  "claim_your_own_name": {
+    "title": "RECLAMA TU PROPIO NOMBRE",
+    "text": "En esta sección puede encontrar NOMBRES que están listados para la venta por los usuarios de Decentraland. Alternativamente, puede reclamar su propio NOMBRE único de la sección Constructor por un precio fijo de {mana}.",
+    "btn": "Reclama tu nombre"
+  },
+  "create_or_edit_list_modal": {
+    "create": {
+      "title": "Crear lista",
+      "private": "Crea la lista como privada"
+    },
+    "edit": {
+      "title": "Editar lista",
+      "private": "Establecer la lista como privada"
+    },
+    "name": "Nombre de la lista",
+    "description": "Descripción de la lista",
+    "info": {
+      "max_name_length": "Los nombres de las listas pueden tener hasta {max} caracteres.",
+      "max_description_length": "Las descripciones de las listas pueden contener hasta {max} caracteres.",
+      "private": "Cuando cree o establezca una lista como privada, solo usted podrá verla."
+    },
+    "errors": {
+      "name_duplicated": "El nombre elegido esta siendo usado en otra de tus listas. <br></br> Elije uno diferente."
+    }
+  },
+  "success_page": {
+    "loading_state": {
+      "item": {
+        "title": "Tu artículo está en camino!"
+      },
+      "subdomain": {
+        "title": "Tu nombre está en camino!"
+      },
+      "description": "La transacción puede tardar hasta <highlight>3 minutos</highlight> en ser procesada.<br></br>Puedes seguir su progreso en <link>la página de actividad</link>.",
+      "status": "Transacción en procesamiento"
+    },
+    "success_state": {
+      "title": "Todo listo!",
+      "status": "Transacción confirmada",
+      "view_item": "Ver mi artículo",
+      "try_genesis_city": "Pruébalo en Genesis City",
+      "mint_more_names": "Acuñar más nombres",
+      "set_as_primary_name": "Elegir como nombre primario",
+      "manage_names": "Administrar mis nombres",
+      "manage_land": "Administrar LAND",
+      "start_building": "Comenzar a construir"
+    },
+    "error_state": {
+      "title": "Ups",
+      "description": "No pudimos cargar la información del artículo",
+      "go_to_activity": "Ir a la página de actividad"
+    }
+  },
+  "share_list_modal": {
+    "title": "Compartir Lista",
+    "copy_link": "copiar link",
+    "share_on_twitter": "Compartir en twitter",
+    "copied": "copiado",
+    "twitter_message": "Acabo de crear una nueva lista personalizada en el marketplace de @Decentraland 🫶\nÉchale un vistazo!\n📍"
+  },
+  "lists_ftu": {
+    "title": "Introducción a las listas de Marketplace",
+    "description": "Ahora puedes guardar wearables y emotes en tus <b>Listas Personalizadas</b> <br></br>. Los encontrarás en la sección <b>Mis listas</b>.",
+    "explore_collectibles": "Explora coleccionables",
+    "view_my_lists": "Ver Mis Listas"
+  },
+  "expired_listings_modal": {
+    "title": "Algunos de sus objetos necesitan su atención",
+    "description": "Vaya a Mis Objetos y revise sus listados <br></br> ya que algunos de ellos deben actualizarse",
+    "go_to_my_assets": "Ir a mis Objetos",
+    "do_not_show_again": "No me muestres esto de nuevo"
+  },
+  "list_card": {
+    "item_count": "{count} {count, plural, one {item} other {items}}",
+    "edit_list": "Editar lista",
+    "delete_list": "Borrar lista",
+    "no_items": "Sin items",
+    "private": "Privada"
+  },
+  "confirm_delete_list_modal": {
+    "title": "Eliminar la lista list <b>{name}</b>",
+    "message": "Está seguro de que quiere eliminar ésta lista? Todos los items dentro de la misma serán removidos permanentemente y la acción no podrá deshacerse.",
+    "confirm": "Borrar permanentemente"
+  },
+  "save_to_list_modal": {
+    "title": "Editar listas",
+    "items_count": "{count} {count, plural, one {item} other {items}}",
+    "create_list": "Crear lista",
+    "save_in_a_list": "Guardar en {name}",
+    "remove_from_a_list": "Remover de {name}",
+    "save_in_lists": "Guardar en {count} listas",
+    "remove_from_lists": "Remover de {count} listas",
+    "save_and_remove_from_lists": "Guardar y remover de {count} lists",
+    "save_changes": "Guardar cambios"
+  },
+  "smart_wearable_video_showcase_modal": {
+    "title": "Vídeo de presentación"
+  },
+  "smart_wearables_ftu_modal": {
+    "title": "¡Las vestimentas inteligentes ya están disponibles! 🟢",
+    "description": "<b>Desbloquea el mundo de Experiencias Portátiles que puedes tener en forma de Vestimenta Interactiva.</b> Experimenta Decentraland como nunca antes con Vestimentas que te brindan nuevas habilidades (¡como volar!) o agrega una capa adicional de contenido, visible solo para usted, superpuesto en escenas de Decentraland.",
+    "explore_collectibles": "Explorar vestimentas interactivas"
+  },
+  "atlas_updated_warning": {
+    "info": "<strong>Los datos del mapa pueden estar desactualizados</strong>Encuentre los detalles de la LAND más recientes en la sección debajo de este mapa. Refrescar esta página puede actualizar la información. Si el problema persiste, comuníquese con nuestro equipo de soporte.",
+    "fingerprint_missmatch": "La información de esta LAND puede no estar actualizada. Actualice la página para obtener la información más reciente. Si el problema persiste, comuníquese con nuestro equipo de soporte."
+  },
+  "names_page": {
+    "title": "Convertite en un ciudadano de Decentraland!",
+    "subtitle": "Obtené tu nombre único",
+    "claim_a_name": "Obtener nombre",
+    "browse_names_being_resold": "Buscar nombres siendo revendidos",
+    "manage_your_names": "Administrar tus nombres",
+    "name_label": "Nombre",
+    "name_placeholder": "Tu nombre va aquí",
+    "repeated_message": "Este nombre no está disponible.",
+    "claim_button": "Obtener",
+    "available": "Nombre disponible",
+    "not_available": "Nombre NO Disponible. Pero aún puedes conseguirlo, visita {link}",
+    "marketplace": "Marketplace",
+    "name_cost": "Cada nombre cuesta {mana} {network}",
+    "name_cost_fiat": "También puedes pagar con FIAT {icon}",
+    "debit_and_credit_cards": "Tarjeta de débito y crédito",
+    "ethereum_mainnet_network": "Red Principal de Ethereum",
+    "dao_tooltip": "Todo lo generado por las ventas de Nombres es redirigido al tesoro de la DAO. {link}",
+    "why_names": "Por qué Nombres?",
+    "name_too_short": "Nombre demasiado corto: debe contener por lo menos 2 caracteres",
+    "has_spaces": "Los Nombres no peuden contener espacios",
+    "name_too_long": "Los Nombres pueden tener hasta 15 caracteres",
+    "invalid_characters": "Los nombres no pueden contener caraceteres no alfa-numericos",
+    "not_enough_mana": "No tienes suficiente MANA para reclamar un nuevo nombre",
+    "fiat_payments_not_enabled": "Los pagos con FIAT no están disponibles en este momento. Por favor inténtelo más tarde.",
+    "claim_name_fat_finger_modal": {
+      "title": "Por favor confirmar tu nombre",
+      "description": "Elegiste {name}. {br} Entra nuevamente el nombre para confirmar tu selección.",
+      "ok_message": "Felicitaciones, el nombre {name} es tuyo.",
+      "caps_warning": "La capitalización de los nombres no puede ser modificada una vez de adquirido el nombre.",
+      "paying_with": "Pagando con",
+      "pay_methods": {
+        "crypto": {
+          "name": "Crypto",
+          "subtitle": "Red de Ethereum Mainnet"
+        },
+        "fiat": {
+          "name": "FIAT",
+          "new": "Nuevo",
+          "title": "Usando tarjetas de débito y crédito",
+          "subtitle": "Las tasas de precios pueden variar"
+        }
+      },
+      "name_placeholder": "Tu nombre único",
+      "names_different": "Nombres no coinciden",
+      "authorization": {
+        "title_action": "comprar",
+        "action": "obtener"
+      }
+    },
+    "your_name": "tuNombre",
+    "why": {
+      "stand_out": {
+        "title": "Destaca con un alias único para tu avatar",
+        "description": "Dile adiós a esos números al final de tu apodo."
+      },
+      "unlock": {
+        "title": "Desbloquea tu propio espacio personal 3D",
+        "description": "Obtén acceso a tu propio espacio 3D en el Metaverso. {link}"
+      },
+      "governance": {
+        "title": "Participar en la gobernanza",
+        "description": "Cada NOMBRE le otorga <b>100 poder de voto (VP)</b> para participar en propuestas DAO."
+      },
+      "get_url": {
+        "title": "Consigue la URL de tu LAND",
+        "description": "Facilite a los visitantes encontrar su TIERRA con una URL memorable como <b>https://name.dcl.eth</b>"
+      }
+    },
+    "ctas": {
+      "name_taken": {
+        "title": "Tu NOMBRE ya está en uso?",
+        "description": "No te preocupes, siempre puedes visitar nuestro Marketplace",
+        "cta": "Explorar nombres que se revenden"
+      },
+      "manage": {
+        "title": "Ya tienes Nombres de Decentraland?",
+        "cta": "Gestiona tus nombres"
+      }
+    }
+  },
+  "set_name_as_alias_modal": {
+    "title": "Utilice NOMBRE como alias",
+    "description": "Su alias actual se actualizará inmediatamente.",
+    "success_title": "Todo listo!",
+    "success_description": "Tu alias fue actualizado"
+  },
+  "bid_button": {
+    "bid": "Ofertar",
+    "blocked": "Tu oferta ya ha sido creada"
+  },
+  "credits": {
+    "value": "1 Crédito = 1 MANA en valor"
+  }
+}

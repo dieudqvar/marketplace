@@ -1,0 +1,21 @@
+.title {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: left;
+  /* TODO (lists): this may be moved after updating the detail page on the unified markets change */
+  display: flex;
+  align-items: center;
+}
+
+/* TODO (lists): the following lines may be moved after updating the detail page on the unified markets change */
+.text {
+  flex: 1 0;
+}
+
+.favorites {
+  display: flex;
+  align-self: flex-end;
+}

@@ -1,0 +1,27 @@
+.bidButton i:global(.lock.icon) {
+  margin: 0 !important;
+}
+
+.bidButton img {
+  width: 16px;
+}
+
+.bidButton:global(.ui.inverted.secondary.button) {
+  display: flex;
+  justify-content: left;
+  padding-left: 5px;
+  gap: 5px;
+  color: white;
+  box-shadow: none !important;
+  border: none;
+  font-size: 15px;
+  z-index: 1;
+}
+
+.bidButton:global(.ui.inverted.secondary.button):hover {
+  background-color: transparent !important;
+}
+
+.bidButton.alreadyBid:global(.ui.inverted.secondary.button) {
+  align-items: baseline;
+}

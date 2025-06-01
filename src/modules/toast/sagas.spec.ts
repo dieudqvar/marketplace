@@ -1,0 +1,315 @@
+import { select } from 'redux-saga/effects'
+import { expectSaga } from 'redux-saga-test-plan'
+import { ChainId, Item, Order, RentalListing } from '@dcl/schemas'
+import { hideAllToasts, showToast } from 'decentraland-dapps/dist/modules/toast/actions'
+import { getState } from 'decentraland-dapps/dist/modules/toast/selectors'
+import { CrossChainProviderType, getTransactionHref } from 'decentraland-dapps/dist/modules/transaction'
+import { RouteResponse } from 'decentraland-transactions/crossChain'
+import { claimNameSuccess } from '../ens/actions'
+import { ENS } from '../ens/types'
+import {
+  bulkPickUnpickFailure,
+  bulkPickUnpickRequest,
+  bulkPickUnpickSuccess,
+  deleteListFailure,
+  deleteListSuccess,
+  updateListSuccess
+} from '../favorites/actions'
+import { List } from '../favorites/types'
+import { FetchItemsFailureAction, buyItemCrossChainSuccess, buyItemWithCardFailure, fetchItemsFailure } from '../item/actions'
+import { ItemBrowseOptions } from '../item/types'
+import { FetchNFTsFailureAction, fetchNFTsFailure } from '../nft/actions'
+import { NFT, NFTsFetchOptions } from '../nft/types'
+import { executeOrderFailure, executeOrderWithCardFailure } from '../order/actions'
+import { claimAssetSuccess, removeRentalSuccess, upsertRentalSuccess } from '../rental/actions'
+import { UpsertRentalOptType } from '../rental/types'
+import { updateStoreSuccess } from '../store/actions'
+import { getEmptyStore } from '../store/utils'
+import {
+  getExecuteOrderFailureToast,
+  getBuyNFTWithCardErrorToast,
+  getLandClaimedBackSuccessToast,
+  getListingRemoveSuccessToast,
+  getStoreUpdateSuccessToast,
+  getUpsertRentalSuccessToast,
+  getFetchAssetsFailureToast,
+  getDeleteListSuccessToast,
+  getDeleteListFailureToast,
+  getBulkPickItemSuccessToast,
+  getBulkPickItemFailureToast,
+  getUpdateListSuccessToast,
+  getNameClaimSuccessToast,
+  getCrossChainTransactionSuccessToast
+} from '../toast/toasts'
+import { ListOfLists, UpdateOrCreateList } from '../vendor/decentraland/favorites/types'
+import { toastSaga } from './sagas'
+import { toastDispatchableActionsChannel } from './utils'
+
+let nft: NFT
+let rental: RentalListing
+
+beforeEach(() => {
+  nft = {
+    contractAddress: 'aContractAddress',
+    tokenId: 'aTokenId'
+  } as NFT
+
+  rental = {
+    id: 'aRentalId'
+  } as RentalListing
+})
+
+describe('when updating the store settings', () => {
+  it('should show an info toast if the update is successful', () => {
+    const MOCKED_TOAST_MESSAGE = getStoreUpdateSuccessToast()
+    return expectSaga(toastSaga)
+      .provide([[select(getState), []]])
+      .dispatch(updateStoreSuccess(getEmptyStore()))
+      .put(showToast(MOCKED_TOAST_MESSAGE))
+      .silentRun()
+  })
+})
+
+describe('when handling the success of a LAND claimed back', () => {
+  it('should show a toast signaling the user that the land has been claimed back successfully', () => {
+    return expectSaga(toastSaga)
+      .provide([[select(getState), []]])
+      .put(showToast(getLandClaimedBackSuccessToast()))
+      .dispatch(claimAssetSuccess(nft, rental))
+      .silentRun()
+  })
+})
+
+describe('when handling the success of a rental listing removal', () => {
+  it('should show a toast signaling the success of a rental listing being removed', () => {
+    return expectSaga(toastSaga)
+      .provide([[select(getState), []]])
+      .put(showToast(getListingRemoveSuccessToast()))
+      .dispatch(removeRentalSuccess(nft))
+      .silentRun()
+  })
+})
+
+describe('when handling the success of a rental listing update', () => {
+  it('should show a toast signaling the success of a rental listing update', () => {
+    return expectSaga(toastSaga)
+      .provide([[select(getState), []]])
+      .put(showToast(getUpsertRentalSuccessToast(nft, UpsertRentalOptType.EDIT)))
+      .dispatch(upsertRentalSuccess(nft, rental, UpsertRentalOptType.EDIT))
+      .silentRun()
+  })
+})
+
+describe('when handling the success of a rental listing creation', () => {
+  it('should show a toast signaling the success of a rental listing creation', () => {
+    return expectSaga(toastSaga)
+      .provide([[select(getState), []]])
+      .put(showToast(getUpsertRentalSuccessToast(nft, UpsertRentalOptType.INSERT)))
+      .dispatch(upsertRentalSuccess(nft, rental, UpsertRentalOptType.INSERT))
+      .silentRun()
+  })
+})
+
+describe('when handling the failure of a buy NFTs with card', () => {
+  const errorMessage = 'anError'
+
+  it('should show a toast signaling the failure of the purchase with card of an item', () => {
+    return expectSaga(toastSaga)
+      .provide([[select(getState), []]])
+      .put(showToast(getBuyNFTWithCardErrorToast(), 'bottom center'))
+      .dispatch(buyItemWithCardFailure(errorMessage))
+      .silentRun()
+  })
+
+  it('should show a toast signaling the failure of the order with card execution', () => {
+    return expectSaga(toastSaga)
+      .provide([[select(getState), []]])
+      .put(showToast(getBuyNFTWithCardErrorToast(), 'bottom center'))
+      .dispatch(executeOrderWithCardFailure(errorMessage))
+      .silentRun()
+  })
+})
+
+describe('when handling the failure of execute order', () => {
+  const error = 'anError'
+  const order = {
+    contractAddress: 'aContractAddress',
+    tokenId: 'aTokenId',
+    price: '100000000000'
+  } as Order
+
+  it('should show a toast signaling the failure', () => {
+    return expectSaga(toastSaga)
+      .provide([[select(getState), []]])
+      .put(showToast(getExecuteOrderFailureToast(), 'bottom center'))
+      .dispatch(executeOrderFailure(order, nft, error))
+      .silentRun()
+  })
+})
+
+describe('when handling the success of updating a list', () => {
+  let list: UpdateOrCreateList
+  beforeEach(() => {
+    list = {
+      name: 'aListName'
+    } as UpdateOrCreateList
+  })
+
+  it('should show a toast signaling the success of the list update', () => {
+    return expectSaga(toastSaga)
+      .provide([[select(getState), []]])
+      .put(showToast(getUpdateListSuccessToast(list), 'bottom center'))
+      .dispatch(updateListSuccess(list))
+      .silentRun()
+  })
+})
+
+describe('when handling the success of deleting a list', () => {
+  let list: List
+  beforeEach(() => {
+    list = {
+      name: 'aListName'
+    } as List
+  })
+
+  it('should show a toast signaling the success of the list deletion', () => {
+    return expectSaga(toastSaga)
+      .provide([[select(getState), []]])
+      .put(showToast(getDeleteListSuccessToast(list), 'bottom center'))
+      .dispatch(deleteListSuccess(list))
+      .silentRun()
+  })
+})
+
+describe('when handling the failure of deleting a list', () => {
+  let list: List
+  beforeEach(() => {
+    list = {
+      name: 'aListName'
+    } as List
+  })
+
+  it('should show a toast signaling the failure of the list deletion', () => {
+    return expectSaga(toastSaga)
+      .provide([[select(getState), []]])
+      .put(showToast(getDeleteListFailureToast(list), 'bottom center'))
+      .dispatch(deleteListFailure(list, error))
+      .silentRun()
+  })
+})
+
+const error = 'anError'
+const actions: [string, FetchItemsFailureAction | FetchNFTsFailureAction][] = [
+  ['items', fetchItemsFailure(error, {} as ItemBrowseOptions)],
+  ['NFTs', fetchNFTsFailure({} as NFTsFetchOptions, error, 123456789)]
+]
+
+describe.each(actions)('when handling the failure of fetching %s', (_, action) => {
+  it('should show a toast signaling the failure ', () => {
+    return expectSaga(toastSaga)
+      .provide([[select(getState), []]])
+      .put(showToast(getFetchAssetsFailureToast(error), 'bottom right'))
+      .dispatch(action)
+      .silentRun()
+  })
+})
+
+describe('when handling the success of a bulk pick and unpick action', () => {
+  let item: Item
+  let pickedFor: ListOfLists[]
+  let unpickedFrom: ListOfLists[]
+
+  beforeEach(() => {
+    item = {
+      id: 'anItemId'
+    } as Item
+    pickedFor = [{ id: 'aListId' } as ListOfLists]
+    unpickedFrom = [{ id: 'anotherListId' } as ListOfLists]
+  })
+
+  it('should hide all toasts and show a success toast', () => {
+    return expectSaga(toastSaga)
+      .provide([[select(getState), []]])
+      .put(hideAllToasts())
+      .put(showToast(getBulkPickItemSuccessToast(item, pickedFor, unpickedFrom), 'bottom center'))
+      .dispatch(bulkPickUnpickSuccess(item, pickedFor, unpickedFrom, true, true))
+      .silentRun()
+  })
+})
+
+describe('when handling the failure of a bulk pick and unpick action', () => {
+  let item: Item
+  let pickedFor: ListOfLists[]
+  let unpickedFrom: ListOfLists[]
+
+  beforeEach(() => {
+    item = {
+      id: 'anItemId'
+    } as Item
+    pickedFor = [{ id: 'aListId' } as ListOfLists]
+    unpickedFrom = [{ id: 'anotherListId' } as ListOfLists]
+  })
+
+  it('should hide all toasts and show a failure toast', () => {
+    return expectSaga(toastSaga)
+      .provide([[select(getState), []]])
+      .put(hideAllToasts())
+      .put(showToast(getBulkPickItemFailureToast(item, pickedFor, unpickedFrom), 'bottom center'))
+      .dispatch(bulkPickUnpickFailure(item, pickedFor, unpickedFrom, 'anErrorMessage'))
+      .silentRun()
+  })
+})
+
+describe('when handling a put into the toastDispatchableActionsChannel', () => {
+  it('should hide all the previous rendered toasts and dispatch the given action', () => {
+    const item = {} as Item
+    toastDispatchableActionsChannel.put(bulkPickUnpickRequest(item, [], []))
+
+    return expectSaga(toastSaga)
+      .put(bulkPickUnpickRequest(item, [], []))
+      .put(hideAllToasts())
+      .silentRun()
+  })
+})
+
+describe('when handling a success claiming action', () => {
+  it('should call the showToast', () => {
+    return expectSaga(toastSaga)
+      .provide([[select(getState), []]])
+      .dispatch(claimNameSuccess({} as ENS, 'aNAME', '0xaHash'))
+      .put(showToast(getNameClaimSuccessToast()))
+      .silentRun()
+  })
+})
+
+describe('when handling a successful cross chain item purchase', () => {
+  let action: ReturnType<typeof buyItemCrossChainSuccess>
+  let actionLink: string
+
+  beforeEach(() => {
+    const txHash = '0xHash'
+    const crossChainProviderType = CrossChainProviderType.SQUID
+
+    action = buyItemCrossChainSuccess(
+      {
+        route: { params: { toChain: ChainId.MATIC_MAINNET } },
+        requestId: 'aRequestId'
+      } as unknown as RouteResponse,
+      ChainId.ETHEREUM_MAINNET,
+      txHash,
+      { name: 'aName', price: '1000000000000' } as Item
+    )
+    actionLink = getTransactionHref({
+      txHash,
+      crossChainProviderType
+    })
+  })
+
+  it('should put the showToast action with the cross chain toast', () => {
+    return expectSaga(toastSaga)
+      .provide([[select(getState), []]])
+      .dispatch(action)
+      .put(showToast(getCrossChainTransactionSuccessToast(actionLink)))
+      .silentRun()
+  })
+})

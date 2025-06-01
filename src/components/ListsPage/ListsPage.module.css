@@ -1,0 +1,145 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.subHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 46px;
+}
+
+.subHeader .right {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.subHeader .left {
+  font-size: 17px;
+}
+
+.cards:global(.ui.cards) {
+  flex: 1 1 auto;
+  margin: 0px;
+}
+
+.cardsGroup {
+  display: grid;
+  grid-gap: 12px;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  margin-bottom: 12px;
+}
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: var(--secondary);
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  line-height: 24px;
+  text-align: center;
+}
+
+.errorImage {
+  background-image: url('../../images/could-not-load-list.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+}
+
+.errorActions {
+  margin-top: 40px;
+}
+
+.customDropdown:global(.ui.dropdown) {
+  display: flex;
+  align-items: center;
+}
+
+.customDropdown:global(.ui.dropdown .menu) {
+  width: 100%;
+}
+
+.customDropdown:global(.ui.dropdown .menu > .item) {
+  min-width: unset;
+}
+
+.createList:global(.ui.small.primary.button) {
+  margin-left: 10px;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: var(--background);
+  opacity: 0.6;
+  z-index: 15;
+}
+
+@media (max-width: 767px) {
+  .content {
+    padding: 0 24px;
+  }
+
+  .createList .icon {
+    display: none;
+  }
+
+  .createList:global(.ui.small.primary.button) {
+    font-size: 12px;
+    width: 97px;
+    height: 34px;
+    padding: 0px;
+    min-width: unset;
+  }
+
+  .sortBy {
+    display: none;
+  }
+
+  .subHeader {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+  }
+
+  .subHeader .left {
+    font-size: 12px;
+  }
+
+  .header:global(.ui.header) {
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+
+  .cardsGroup :global(.ui.card) {
+    margin: auto;
+  }
+
+  .loader:global(.ui.massive.loader) {
+    position: fixed;
+  }
+}
+
+@media (min-width: 768px) {
+  .transparentOverlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  .loader:global(.ui.massive.loader) {
+    position: sticky;
+    top: 50vh;
+    left: 0;
+    margin: auto;
+  }
+}

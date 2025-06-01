@@ -1,0 +1,20 @@
+.AccountPage .PageHeader {
+  display: flex;
+  align-items: center;
+  background-color: var(--card);
+}
+
+.AccountPage .PageHeader > div {
+  margin: auto;
+  text-align: center;
+}
+
+.AccountPage ul.Menu {
+  margin-top: 0;
+  overflow: hidden;
+}
+
+.AccountPage .blockie-address {
+  margin-top: 16px;
+  font-size: 17px;
+}

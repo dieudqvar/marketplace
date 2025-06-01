@@ -1,0 +1,37 @@
+.pill {
+  padding: 6px 16px;
+  background: var(--primary);
+  border-radius: 16px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.pill:last-child {
+  margin-right: 0;
+}
+
+.pill:hover {
+  background: rgba(115, 110, 125, 1);
+}
+
+.pill .deleteBtn {
+  margin-left: 8px;
+  margin-right: 0;
+  cursor: pointer;
+  height: auto;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: white;
+  padding: 0;
+  margin-right: 0;
+}
+
+.pill .deleteBtn i {
+  margin-right: 0;
+}

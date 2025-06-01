@@ -1,0 +1,128 @@
+.WearableTags {
+  display: flex;
+}
+
+.WearableTags .rarity {
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+.WearableTags .icon {
+  margin-left: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  width: 24px;
+  height: 24px;
+  background-color: #37333d;
+  border-radius: 4px;
+}
+
+.WearableTags .icon.body_shape {
+  background-image: url(../../../images/wearables/BodyShapeIcon.svg);
+}
+
+.WearableTags .icon.earring {
+  background-image: url(../../../images/wearables/EarringsIcon.svg);
+}
+
+.WearableTags .icon.eyebrows {
+  background-image: url(../../../images/wearables/EyebrowIcon.svg);
+}
+
+.WearableTags .icon.eyes {
+  background-image: url(../../../images/wearables/EyesIcon.svg);
+}
+
+.WearableTags .icon.eyewear {
+  background-image: url(../../../images/wearables/EyewearIcon.svg);
+}
+
+.WearableTags .icon.facial_hair {
+  background-image: url(../../../images/wearables/FacilHairIcon.svg);
+}
+
+.WearableTags .icon.feet {
+  background-image: url(../../../images/wearables/FeetIcon.svg);
+}
+
+.WearableTags .icon.hair {
+  background-image: url(../../../images/wearables/HairIcon.svg);
+}
+
+.WearableTags .icon.hat {
+  background-image: url(../../../images/wearables/HatIcon.svg);
+}
+
+.WearableTags .icon.helmet {
+  background-image: url(../../../images/wearables/HelmetIcon.svg);
+}
+
+.WearableTags .icon.lower_body {
+  background-image: url(../../../images/wearables/LowerBodyIcon.svg);
+}
+
+.WearableTags .icon.mask {
+  background-image: url(../../../images/wearables/MaskIcon.svg);
+}
+
+.WearableTags .icon.mouth {
+  background-image: url(../../../images/wearables/MouthIcon.svg);
+}
+
+.WearableTags .icon.tiara {
+  background-image: url(../../../images/wearables/TiaraIcon.svg);
+}
+
+.WearableTags .icon.top_head {
+  background-image: url(../../../images/wearables/TopHeadIcon.svg);
+}
+
+.WearableTags .icon.upper_body {
+  background-image: url(../../../images/wearables/UpperBodyIcon.svg);
+}
+
+.WearableTags .icon.skin {
+  background-image: url(../../../images/wearables/SkinIcon.svg);
+}
+
+.WearableTags .IconBadge.SmartBadge {
+  margin-left: 6px;
+}
+
+.ui.link.card.AssetCard.catalog:hover .WearableTags .IconBadge.SmartBadge {
+  mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/300% 100%;
+  -webkit-mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/300% 100%;
+  animation: shimmer 2.5s infinite;
+}
+
+.WearableTags .IconBadge.SmartBadge .custom-icon {
+  margin: 0px;
+}
+
+.WearableTags .IconBadge.SmartBadge .text {
+  transition: opacity .5s ease-in;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  margin-left: 0px;
+}
+
+.ui.link.card.AssetCard.catalog:hover .WearableTags .IconBadge.SmartBadge .text {
+  opacity: 1;
+  height: auto;
+  width: auto;
+  margin-left: 10px;
+}
+
+@keyframes shimmer {
+  100% {
+    mask-position: left;
+    -webkit-mask-position: left;
+  }
+}

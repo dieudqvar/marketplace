@@ -1,0 +1,26 @@
+.AssetPage {
+  margin-top: 39px;
+}
+
+.AssetPage .back {
+  top: 5px;
+}
+
+.AssetPage .asset-container {
+  width: 100%;
+}
+
+.AssetPage .backText {
+  margin-left: 45px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .AssetPage {
+    margin-top: 0px;
+  }
+
+  .AssetPage .backText {
+    margin-top: -20px;
+  }
+}

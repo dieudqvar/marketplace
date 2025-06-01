@@ -1,0 +1,231 @@
+.BestBuyingOption {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: var(--card);
+  width: 100%;
+  gap: 16px;
+}
+
+.BestBuyingOption .AlignEnd {
+  align-items: flex-end;
+}
+
+.BestBuyingOption .buyDirectly,
+.BestBuyingOption .cardTitle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 15px;
+  color: var(--text);
+  background-color: #43404a;
+  padding: 8px 16px;
+}
+
+.BestBuyingOption .buyDirectly {
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.BestBuyingOption .buyDirectly img {
+  margin-right: 4px;
+}
+
+.BestBuyingOption .priceStockLabels {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 4px;
+  color: #5e5b67;
+}
+
+.BestBuyingOption .label {
+  font-size: 13px;
+  color: var(--text-on-card);
+  text-transform: uppercase;
+}
+
+.BestBuyingOption .priceRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.BestBuyingOption .priceContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.BestBuyingOption .manaContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: unset;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.BestBuyingOption .prices {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.BestBuyingOption .originalPrice {
+  font-weight: 500;
+  text-decoration: line-through;
+  opacity: 0.5;
+  color: var(--text);
+}
+
+.BestBuyingOption .manaContainer :global(.ui.large.header.dcl.mana) {
+  margin: unset;
+}
+
+.BestBuyingOption .stockContainer {
+  font-size: 18px;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.BestBuyingOption .creditsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--divider);
+  transition: all 0.2s ease;
+}
+
+.BestBuyingOption .creditsLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.BestBuyingOption .creditsText {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+  transition: color 0.2s ease;
+}
+
+.BestBuyingOption .creditsAmount {
+  font-size: 15px;
+  color: var(--text);
+  transition: color 0.2s ease;
+}
+
+.BestBuyingOption .creditsNumber {
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.BestBuyingOption .containerColumn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.BestBuyingOption .fullWidth {
+  width: 100%;
+}
+
+.BestBuyingOption .informationText {
+  font-size: 24px;
+  color: var(--text-on-card);
+}
+
+.BestBuyingOption .informationTitle {
+  font-size: 14px;
+  color: var(--secondary-text);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  line-height: 7px;
+}
+
+.BestBuyingOption .mintingIcon {
+  height: 19px;
+}
+
+.BestBuyingOption .buyWithCardClassName {
+  width: 100%;
+}
+
+.BestBuyingOption .primaryButton {
+  background-color: var(--primary) !important;
+}
+
+.BestBuyingOption .outlinedButton {
+  border: 1px solid var(--secondary-text) !important;
+}
+
+.BestBuyingOption .expiresAt {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.BestBuyingOption .outlinedButton {
+  width: 100%;
+}
+
+.BestBuyingOption .mainContainer {
+  padding: 16px;
+}
+
+.BestBuyingOption .buyNFTButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.BestBuyingOption .buyNFTButtons :global(.dcl.mana .matic) {
+  width: 24px;
+  height: 24px;
+}
+
+/* Empty Card Container */
+
+.BestBuyingOption .emptyCardContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 36px;
+  justify-content: center;
+  width: 100%;
+}
+
+.BestBuyingOption .nolistingsImage {
+  height: 40px;
+  align-self: center;
+  margin-right: 16px;
+}
+
+.BestBuyingOption .emptyCardTitle {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.BestBuyingOption .emptyCardContent {
+  color: var(--primary-text);
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 14px;
+  gap: 8px;
+}
+
+.BestBuyingOption .checkTheOwners {
+  padding: 0px 5px;
+  text-decoration: underline;
+  cursor: pointer;
+}

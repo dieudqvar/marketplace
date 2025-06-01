@@ -1,0 +1,131 @@
+.ItemDetail {
+  display: flex;
+  flex-direction: column;
+}
+
+.ItemDetail .assetImageContainer :global(.AssetImage) {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ItemDetail .assetImageContainer {
+  width: 52.5%;
+  max-height: 655px;
+}
+
+.ItemDetail.smart.withRequiredPermissions .assetImageContainer {
+  max-height: 707px;
+}
+
+.ItemDetail .badges {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.ItemDetail .itemDetailBottomContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.ItemDetail .information {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: 15px;
+}
+
+.ItemDetail .informationContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.ItemDetail .attributesRow {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.ItemDetail .attributesColumn {
+  flex-basis: 100%;
+}
+
+.ItemDetail :global(.ui.button + .ui.button) {
+  margin-left: 0px;
+}
+
+.ItemDetail .vrmBadge {
+  background: #ff743933;
+  color: #ff7439;
+  padding: 3px 6px;
+  height: 24px;
+  font-size: 13px;
+  display: flex;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+  .ItemDetail .information {
+    width: 100%;
+  }
+
+  .ItemDetail .informationContainer {
+    flex-wrap: wrap;
+  }
+  .ItemDetail .assetImageContainer {
+    width: 100%;
+  }
+
+  .ItemDetail :global(.dcl.stats) {
+    margin: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .itemDetailBottomContainer {
+    margin-top: 20px;
+  }
+
+  .ItemDetail .attributesRow {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ItemDetail .assetImageContainer {
+    height: 400px;
+  }
+
+  .ItemDetail :global(.dcl.tab.active) {
+    border-left: none;
+    border-bottom: 2px solid var(--primary);
+    margin-bottom: 0;
+  }
+
+  .ItemDetail :global(.dcl.tab) {
+    margin-bottom: 0;
+  }
+
+  .ItemDetail .attributesColumn :global(.dcl.stats) {
+    width: 100%;
+  }
+
+  .ItemDetail :global(.dcl.tabs) {
+    justify-content: space-evenly;
+  }
+  .ItemDetail :global(.dcl.tabs.fullscreen) {
+    border-bottom: 1px solid var(--divider);
+    margin-bottom: 0;
+  }
+  .ItemDetail .spaceInMint {
+    gap: 0px;
+  }
+}

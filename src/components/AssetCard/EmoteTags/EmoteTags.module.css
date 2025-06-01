@@ -1,0 +1,45 @@
+.EmoteTags {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.EmoteTags .badges {
+  display: flex;
+}
+
+.EmoteTags .PlayModeSmallBadge {
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #37333d;
+  margin-left: 10px;
+}
+
+.EmoteTags .sound {
+  background-color: #37333d;
+  padding: 4px 6px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.EmoteTags .PlayModeSmallBadge .PlayIcon {
+  height: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 19px;
+  filter: brightness(0) invert(1);
+  background-size: cover;
+}
+
+.EmoteTags .PlayModeSmallBadge .PlayOnce {
+  background-image: url(../../../images/emotes/play-once.svg);
+}
+
+.EmoteTags .PlayModeSmallBadge .PlayLoop {
+  background-image: url(../../../images/emotes/play-loop.svg);
+}

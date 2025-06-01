@@ -1,0 +1,29 @@
+.card {
+  /* Override semantic UI's width */
+  width: 460px !important;
+}
+
+.card.buyWithCard {
+  /* Override semantic UI's width */
+  width: 416px !important;
+}
+
+.buyWithCard:global(.ui.card > .content) {
+  padding: 20px 24px 24px;
+}
+
+.paragraph {
+  margin-bottom: 10px;
+}
+
+.switchNetwork {
+  padding-left: 0px !important;
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    /* Override semantic UI's width */
+    width: 100% !important;
+  }
+}

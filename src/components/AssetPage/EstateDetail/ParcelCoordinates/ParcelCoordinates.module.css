@@ -1,0 +1,53 @@
+.ParcelCoordinates {
+  margin-top: 48px;
+}
+
+.coordinates {
+  display: grid;
+  justify-content: space-between;
+  gap: 6px;
+  grid-template-columns: repeat(auto-fill, 110px);
+  overflow: hidden;
+}
+
+.collapsed {
+  height: 88px;
+}
+
+.expanded {
+  height: auto;
+}
+
+.coordinates a .coordinate {
+  color: var(--text);
+}
+
+.coordinates a .coordinate:hover {
+  background-color: var(--primary) !important;
+}
+
+.coordinates a:visited .coordinate {
+  background-color: var(--secondary) !important;
+}
+
+.coordinate {
+  cursor: pointer !important;
+}
+
+.moreText {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.showMore {
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.showMore span {
+  font-size: 15px;
+  color: var(--primary);
+  cursor: pointer;
+}

@@ -1,0 +1,19 @@
+@media (min-width: 768px) {
+  .listingsTableContainer :global(.filtertabsContainer) {
+    height: 69px;
+  }
+
+  .listingsTableContainer :global(.ui.basic.table tbody tr) {
+    height: 65px;
+  }
+  .listingsTableContainer :global(.dcl.mana.inline) {
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .listingsTableContainer :global(.ui.small.inverted.button) {
+    min-width: auto;
+    border: none;
+  }
+}

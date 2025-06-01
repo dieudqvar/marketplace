@@ -1,0 +1,133 @@
+.FavoritesCounter {
+  display: flex;
+}
+
+:global(.ui.cards a.card:hover) .bubble,
+:global(.ui.link.card:hover) .bubble,
+:global(.ui.link.cards .card:hover) .bubble,
+:global(a.ui.card:hover) .bubble {
+  opacity: 1;
+  transition: opacity .2s ease-out;
+  -webkit-transition: opacity .2s ease-out;
+  -moz-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+}
+
+.FavoritesCounter :global(.ui.loader).loader {
+  margin: 0 .25rem 0 0;
+}
+
+.FavoritesCounter :global(.ui.loader:before) {
+  border-color: var(--text) !important;
+}
+
+.FavoritesCounter :global(.ui.loader:after) {
+  border-color: rgb(35, 31, 32, 0.4) transparent transparent !important;
+}
+
+.FavoritesCounter:hover :global(.ui.loader:after) {
+  border-color: rgba(35, 31, 32, 1) transparent transparent !important;
+}
+
+.FavoritesCounter:hover .bubble {
+  background-color: rgba(35, 31, 32, 1);
+}
+
+.FavoritesCounter.Collapsed .bubble:hover {
+  box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.5);
+}
+
+.FavoritesCounter.Collapsed :global(.ui.loader).loader {
+  margin: 0;
+}
+
+.iconContainer {
+  min-width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.FavoritesCounter.Collapsed {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.FavoritesCounter.Collapsed {
+  display: flex;
+  align-items: center;
+  column-gap: 11px;
+}
+
+.FavoritesCounter .bubble {
+  opacity: 0;
+  min-width: 65px;
+  min-height: 32px;
+  background-color: rgb(35, 31, 32, 0.4);
+  color: var(--text);
+  border-radius: 50px;
+  padding: 4px 8px;
+  z-index: 2;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1px;
+  transition: background-color .5s;
+  -webkit-transition: background-color .5s;
+  -moz-transition: background-color .5s;
+  -o-transition: background-color .5s;
+  cursor: pointer;
+}
+
+.FavoritesCounter.Collapsed .bubble {
+  min-width: 38px;
+  min-height: 33px;
+  border-radius: 13px;
+  background-color: #231F20;
+  border: .25px solid var(--text);
+  display: flex;
+  align-items: center;
+  opacity: 1;
+}
+
+.FavoritesCounter.Collapsed .counter {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.FavoritesCounter.Collapsed .counter.nonClickable {
+  cursor: default;
+  text-decoration-line: none;
+}
+
+@media (max-width: 768px) {
+  .FavoritesCounter .bubble {
+    opacity: 1;
+  }
+
+  .FavoritesCounter:hover .bubble {
+    background-color: rgb(35, 31, 32, 0.4);
+  }
+
+  .FavoritesCounter.Collapsed .bubble {
+    min-width: 32px;
+    min-height: 28px;
+  }
+
+  .FavoritesCounter.Collapsed .counter {
+    font-size: 12px;
+  }
+}

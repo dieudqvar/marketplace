@@ -1,0 +1,25 @@
+.buy_with_card:global(.ui.button) {
+  background-color: var(--superGray);
+}
+
+.buy_with_card:global(.ui.button):hover {
+  background-color: var(--superGrayHovered);
+}
+
+.loading_asset {
+  align-self: center;
+}
+
+.buyWithCryptoButton {
+  height: 42px;
+}
+
+.visibilityHidden {
+  visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  .visibilityHidden:global(.ui.fluid.button) {
+    display: none;
+  }
+}

@@ -1,0 +1,65 @@
+:global(.ui.modal).assetFiltersModal {
+  display: flex !important; /** override decentraland-ui important */
+  flex-direction: column;
+  background: var(--background);
+  height: 100vh;
+}
+
+:global(.ui.modal).assetFiltersModal > :global(.header).modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 16px !important; /* override decentraland-ui important */
+  border-bottom: 1px solid rgba(115, 110, 125, 0.32);
+  background: var(--background);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.modalTitle {
+  font-size: 17px;
+  line-height: 17px;
+  margin: 0;
+  font-weight: 400;
+}
+
+:global(.ui.button).closeButton::before {
+  content: url(../../../images/simple_close.svg);
+  width: 16px;
+  height: 16px;
+}
+
+:global(.ui.modal).assetFiltersModal > :global(.content) {
+  overflow: scroll;
+  margin: 0;
+  padding: 0 !important; /* override important from decentralnad-ui */
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: transparent;
+}
+
+:global(.ui.modal).assetFiltersModal > .modalFooter {
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0;
+  background-color: var(--background);
+  border-top: 1px solid rgba(115, 110, 125, 0.32);
+  width: 100%;
+  padding: 12px 21px !important;
+}
+
+:global(.ui.modal).assetFiltersModal
+  > .modalFooter
+  > :global(.ui.primary.button) {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* This MUST be changed in the UI as this removes the padding from all modals */
+:global(.ui.page.modals) {
+  padding-top: 0;
+  padding-bottom: 0;
+}

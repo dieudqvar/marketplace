@@ -1,0 +1,53 @@
+.fieldsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: 5%;
+}
+
+.loaderContainer {
+  align-items: center;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  width: 100%;
+}
+
+.fieldsContainer :global(.field) {
+  width: 100% !important;
+  min-width: auto;
+}
+
+.clndr-control .ui.compact.icon.button,
+.clndr-control .ui.compact.icon.buttons .button {
+  width: 20px !important;
+  top: 20px;
+}
+
+@media (max-width: 767px) {
+  .modal:global(.ui.modal .actions) {
+    align-items: center;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+  }
+
+  .AuthorizationModalActions {
+    align-items: center;
+    bottom: 28px;
+    margin: 0px !important;
+    position: fixed;
+    width: 100%;
+  }
+
+  .AuthorizationModal {
+    flex-grow: 4 !important;
+  }
+
+  .AuthorizationModalButtons {
+    width: 80%;
+  }
+}

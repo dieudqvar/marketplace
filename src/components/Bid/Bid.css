@@ -1,0 +1,142 @@
+.Bid {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--card);
+  margin-bottom: 20px;
+}
+
+.Bid .bid-row {
+  display: flex;
+  width: 100%;
+}
+
+.Bid .image {
+  flex: none;
+  height: 96px;
+  width: 96px;
+  position: relative;
+}
+
+.Bid .wrapper {
+  grid-template-columns: 1fr 1fr 1fr 1fr 266px;
+  display: grid;
+  align-items: center;
+  gap: 10px;
+  padding: 24px;
+  width: 100%;
+}
+
+.Bid .wrapper .dcl.stats .ui.header {
+  white-space: nowrap;
+}
+
+.Bid .wrapper .dcl.stats .ui.header:not(.sub) {
+  font-size: 17px;
+  line-height: 26px;
+}
+
+.Bid .wrapper .dcl.stats .ui.header.sub {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.Bid .wrapper .dcl.stats .Profile {
+  font-size: 17px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.Bid .wrapper .dcl.stats .Profile .name {
+  color: var(--text);
+}
+
+.Bid .actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.Bid .actions .ui.button:not(.primary) {
+  background-color: transparent;
+  border: 2px solid var(--secondary-on-modal);
+}
+
+.Bid .action .ui.button:not(:only-child) {
+  flex: 1;
+}
+
+.Bid .actions .ui.button + .ui.button {
+  margin-left: 0;
+}
+
+.Bid .actions .AcceptButton .ui.button,
+.Bid .actions .AcceptButton .popup-button {
+  height: 100%;
+}
+
+.Bid .wrapper .dcl.stats + .dcl.stats {
+  margin-left: 0px;
+}
+
+@media (max-width: 1300px) {
+  .Bid .wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .Bid .actions {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .Bid {
+    height: auto;
+  }
+
+  .Bid .bid-row {
+    flex-direction: column;
+  }
+
+  .Bid .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .Bid .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Bid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Bid .wrapper .dcl.stats,
+  .Bid .wrapper .dcl.stats.from,
+  .Bid .wrapper .dcl.stats.price {
+    width: 100%;
+  }
+
+  .Bid .wrapper .dcl.stats + .dcl.stats {
+    margin-left: 0px;
+  }
+
+  .Bid .actions {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .Bid .actions .ui.button {
+    width: 100%;
+  }
+}
